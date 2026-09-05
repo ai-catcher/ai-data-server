@@ -1,0 +1,14 @@
+{
+  "ai_api": "https://openrouter.ai/api/v1/chat/completions",
+  "nvidia_api": "https://integrate.api.nvidia.com/v1/chat/completions",
+  "openrouter_model": "minimax/minimax-m3:free",
+  "nvidia_fallback_model": "minimaxai/minimax-m3",
+  "temperature": 1,
+  "top_p": 0.95,
+  "max_tokens": 32768,
+  "minimum_topics": 3,
+  "openrouter_request_timeout_ms": 1200000,
+  "nvidia_request_timeout_ms": 1200000,
+  "stream_idle_timeout_ms": 180000,
+  "overall_task_timeout_ms": 1500000
+}

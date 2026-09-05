@@ -1,0 +1,72 @@
+name: Update ranking data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ranking-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Generate validated JSON
+        env:
+          XBANGDAN_API_URL: ${{ secrets.XBANGDAN_API_URL }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: node scripts/update-data.mjs
+
+      - name: Upload sanitized AI model output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-model-output-${{ github.run_id }}-${{ github.run_attempt }}
+          path: data/ai_model_output.txt
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Publish main as one root commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/feed_complete.json
+          tree_id="$(git write-tree)"
+          commit_id="$(printf '%s\n' 'Update ranking data' | git commit-tree "$tree_id")"
+          push_log="$(mktemp)"
+          trap 'rm -f "$push_log"' EXIT
+          if git push --quiet --force-with-lease="refs/heads/main:${GITHUB_SHA}" origin "$commit_id:refs/heads/main" 2>"$push_log"; then
+            printf '%s\n' '### Publish' '- Status: success' >> "$GITHUB_STEP_SUMMARY"
+          else
+            if grep -q 'stale info' "$push_log"; then
+              error_code='PUBLISH_STALE_REF'
+              error_message='main changed after checkout; a fresh workflow run is required'
+            else
+              error_code='PUBLISH_FAILED'
+              error_message='git push failed; inspect repository permissions and branch state'
+            fi
+            printf '::error title=%s::%s\n' "$error_code" "$error_message"
+            printf '%s\n' '### Publish' "- Status: failed" "- Error code: \`$error_code\`" "- Detail: $error_message" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
