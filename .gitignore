@@ -1,0 +1,6 @@
+data/feed_complete.json
+data/ai_model_output.txt
+*.tmp
+.env
+.env.*
+node_modules/
