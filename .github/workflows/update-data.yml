@@ -1,0 +1,157 @@
+name: Update ranking data
+
+on:
+  schedule:
+    - cron: '23,53 * * * *'
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Trigger source
+        required: false
+        default: manual
+        type: string
+      cron:
+        description: Cron expression reported by the external scheduler
+        required: false
+        default: ''
+        type: string
+      scheduled_time:
+        description: UTC scheduled time reported by the external scheduler
+        required: false
+        default: ''
+        type: string
+      force:
+        description: Ignore the 15-minute trigger lock
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ranking-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Acquire 15-minute trigger lock
+        id: trigger_gate
+        shell: bash
+        env:
+          FORCE_RUN: ${{ inputs.force || 'false' }}
+          TRIGGER_SOURCE: ${{ github.event_name == 'schedule' && 'github-schedule' || inputs.source || 'manual' }}
+          TRIGGER_CRON: ${{ github.event.schedule || inputs.cron || '' }}
+          TRIGGER_SCHEDULED_TIME: ${{ inputs.scheduled_time || '' }}
+        run: |
+          set -euo pipefail
+
+          lock_ref='refs/heads/scheduler-lock'
+          lock_file="$RUNNER_TEMP/scheduler-lock.json"
+          previous_file="$RUNNER_TEMP/previous-scheduler-lock.json"
+          now_epoch="$(date -u +%s)"
+          previous_epoch=0
+          remote_lock_sha=''
+
+          if remote_line="$(git ls-remote --heads origin "$lock_ref")" && [[ -n "$remote_line" ]]; then
+            remote_lock_sha="${remote_line%%[[:space:]]*}"
+            git fetch --quiet --no-tags --depth=1 origin "$lock_ref"
+            git show FETCH_HEAD:lock.json > "$previous_file"
+            previous_epoch="$(node -e "const fs=require('fs'); const value=JSON.parse(fs.readFileSync(process.argv[1], 'utf8')).accepted_at_epoch; if (!Number.isInteger(value) || value < 0) process.exit(2); process.stdout.write(String(value));" "$previous_file")"
+          fi
+
+          age_seconds=$((now_epoch - previous_epoch))
+          if [[ "$FORCE_RUN" != 'true' && "$previous_epoch" -gt 0 && "$age_seconds" -ge 0 && "$age_seconds" -lt 900 ]]; then
+            printf '%s\n' 'should_run=false' >> "$GITHUB_OUTPUT"
+            printf '%s\n' \
+              '### Trigger gate' \
+              '- Status: skipped' \
+              '- Reason: another trigger was accepted less than 15 minutes ago' \
+              "- Previous lock age: ${age_seconds}s" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          node -e "const fs=require('fs'); const data={accepted_at:new Date(Number(process.argv[2])*1000).toISOString(),accepted_at_epoch:Number(process.argv[2]),run_id:process.env.GITHUB_RUN_ID,source:process.env.TRIGGER_SOURCE,cron:process.env.TRIGGER_CRON,scheduled_time:process.env.TRIGGER_SCHEDULED_TIME}; fs.writeFileSync(process.argv[1], JSON.stringify(data, null, 2)+'\\n');" "$lock_file" "$now_epoch"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          blob_id="$(git hash-object -w "$lock_file")"
+          tree_id="$(printf '100644 blob %s\tlock.json\n' "$blob_id" | git mktree)"
+          commit_id="$(printf '%s\n' 'Update scheduler lock' | git commit-tree "$tree_id")"
+
+          if [[ -n "$remote_lock_sha" ]]; then
+            git push --quiet --force-with-lease="$lock_ref:$remote_lock_sha" origin "$commit_id:$lock_ref"
+          else
+            git push --quiet origin "$commit_id:$lock_ref"
+          fi
+
+          printf '%s\n' 'should_run=true' >> "$GITHUB_OUTPUT"
+          printf '%s\n' \
+            '### Trigger gate' \
+            '- Status: accepted' \
+            "- Source: ${TRIGGER_SOURCE}" \
+            "- Cron: ${TRIGGER_CRON:-not supplied}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Setup Node.js
+        if: steps.trigger_gate.outputs.should_run == 'true'
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        if: steps.trigger_gate.outputs.should_run == 'true'
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Generate validated JSON
+        if: steps.trigger_gate.outputs.should_run == 'true'
+        env:
+          XBANGDAN_API_URL: ${{ secrets.XBANGDAN_API_URL }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: node scripts/update-data.mjs
+
+      - name: Upload sanitized AI model output
+        if: always() && steps.trigger_gate.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-model-output-${{ github.run_id }}-${{ github.run_attempt }}
+          path: data/ai_model_output.txt
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Publish main as one root commit
+        if: steps.trigger_gate.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          base_sha="$(git rev-parse HEAD)"
+          git add -f data/feed_complete.json
+          tree_id="$(git write-tree)"
+          commit_id="$(printf '%s\n' 'Update ranking data' | git commit-tree "$tree_id")"
+          push_log="$(mktemp)"
+          trap 'rm -f "$push_log"' EXIT
+          if git push --quiet --force-with-lease="refs/heads/main:${base_sha}" origin "$commit_id:refs/heads/main" 2>"$push_log"; then
+            printf '%s\n' '### Publish' '- Status: success' >> "$GITHUB_STEP_SUMMARY"
+          else
+            if grep -q 'stale info' "$push_log"; then
+              error_code='PUBLISH_STALE_REF'
+              error_message='main changed after checkout; a fresh workflow run is required'
+            else
+              error_code='PUBLISH_FAILED'
+              error_message='git push failed; inspect repository permissions and branch state'
+            fi
+            printf '::error title=%s::%s\n' "$error_code" "$error_message"
+            printf '%s\n' '### Publish' "- Status: failed" "- Error code: \`$error_code\`" "- Detail: $error_message" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
