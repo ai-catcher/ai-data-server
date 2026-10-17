@@ -1,0 +1,14 @@
+{
+  "name": "ai-data-server",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/worker.test.mjs"
+  },
+  "dependencies": {
+    "undici": "^6.21.2"
+  }
+}
