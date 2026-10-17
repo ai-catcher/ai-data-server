@@ -128,23 +128,25 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-      - name: Publish main as one root commit
+      - name: Publish ranking data with normal history
         if: steps.trigger_gate.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          base_sha="$(git rev-parse HEAD)"
           git add -f data/feed_complete.json
-          tree_id="$(git write-tree)"
-          commit_id="$(printf '%s\n' 'Update ranking data' | git commit-tree "$tree_id")"
+          if git diff --cached --quiet; then
+            printf '%s\n' '### Publish' '- Status: skipped (data unchanged)' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m 'Update ranking data'
           push_log="$(mktemp)"
           trap 'rm -f "$push_log"' EXIT
-          if git push --quiet --force-with-lease="refs/heads/main:${base_sha}" origin "$commit_id:refs/heads/main" 2>"$push_log"; then
+          if git push --quiet origin HEAD:refs/heads/main 2>"$push_log"; then
             printf '%s\n' '### Publish' '- Status: success' >> "$GITHUB_STEP_SUMMARY"
           else
-            if grep -q 'stale info' "$push_log"; then
+            if grep -Eq 'non-fast-forward|fetch first|\[rejected\]' "$push_log"; then
               error_code='PUBLISH_STALE_REF'
               error_message='main changed after checkout; a fresh workflow run is required'
             else

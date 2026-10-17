@@ -2,7 +2,10 @@
   "ai_api": "https://openrouter.ai/api/v1/chat/completions",
   "nvidia_api": "https://integrate.api.nvidia.com/v1/chat/completions",
   "openrouter_model": "openrouter/free",
-  "nvidia_fallback_model": "moonshotai/kimi-k3",
+  "nvidia_models": [
+    "stepfun-ai/step-5-preview",
+    "nvidia/nemotron-3-ultra-550b-a55b"
+  ],
   "temperature": 1,
   "top_p": 0.95,
   "max_tokens": 32768,

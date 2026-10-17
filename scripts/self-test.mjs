@@ -227,7 +227,7 @@ const aiConfig = {
     ai_api: 'https://openrouter.ai/api/v1/chat/completions',
     nvidia_api: 'https://integrate.api.nvidia.com/v1/chat/completions',
     openrouter_model: 'openrouter/free',
-    nvidia_fallback_model: 'moonshotai/kimi-k3',
+    nvidia_models: ['stepfun-ai/step-5-preview', 'nvidia/nemotron-3-ultra-550b-a55b'],
     temperature: 1,
     top_p: 0.95,
     max_tokens: 32768,
@@ -235,7 +235,7 @@ const aiConfig = {
     openrouter_request_timeout_ms: 1_000,
     nvidia_request_timeout_ms: 1_000,
     stream_idle_timeout_ms: 1_000,
-    overall_task_timeout_ms: 3_000,
+    overall_task_timeout_ms: 6_000,
 };
 const validModelContent = [
     '第一组测试新闻事件----10001,10002----#测试,#第一组,#新闻',
@@ -270,18 +270,27 @@ try {
         if (String(url).includes('openrouter.ai')) primarySuccessOpenRouterCount += 1;
         else primarySuccessNvidiaCount += 1;
         const payload = JSON.parse(options.body);
+        assert.equal(payload.model, 'stepfun-ai/step-5-preview');
+        assert.equal(payload.temperature, 0.5);
+        assert.equal(payload.top_p, 1);
+        assert.equal(payload.max_tokens, 32768);
+        assert.equal(payload.frequency_penalty, 0);
+        assert.equal(payload.presence_penalty, 0);
+        assert.equal(payload.stream, true);
+        assert.equal('reasoning_effort' in payload, false);
+        assert.equal('chat_template_kwargs' in payload, false);
         return Response.json({
             model: String(url).includes('openrouter.ai') ? 'test/free-selected-model:free' : payload.model,
             choices: [{ message: { content: validModelContent }, finish_reason: 'stop' }],
         });
     };
     const result = await generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries);
-    assert.equal(result.model, 'test/free-selected-model:free');
+    assert.equal(result.model, 'stepfun-ai/step-5-preview');
 } finally {
     globalThis.fetch = originalFetch;
 }
-assert.equal(primarySuccessOpenRouterCount, 1);
-assert.equal(primarySuccessNvidiaCount, 0);
+assert.equal(primarySuccessOpenRouterCount, 0);
+assert.equal(primarySuccessNvidiaCount, 1);
 
 let fallbackOpenRouterCount = 0;
 let fallbackNvidiaCount = 0;
@@ -293,42 +302,47 @@ try {
         }
         fallbackNvidiaCount += 1;
         const payload = JSON.parse(options.body);
-        assert.equal(payload.model, 'moonshotai/kimi-k3');
+        if (payload.model === 'stepfun-ai/step-5-preview') return new Response('', { status: 503 });
+        assert.equal(payload.model, 'nvidia/nemotron-3-ultra-550b-a55b');
+        assert.equal(options.headers.accept, 'text/event-stream');
         assert.deepEqual(
             {
                 temperature: payload.temperature,
+                top_p: payload.top_p,
                 max_tokens: payload.max_tokens,
-                seed: payload.seed,
                 stream: payload.stream,
-                reasoning_effort: payload.reasoning_effort,
+                chat_template_kwargs: payload.chat_template_kwargs,
             },
-            { temperature: 1, max_tokens: 16384, seed: 0, stream: true, reasoning_effort: 'low' },
+            { temperature: 1, top_p: 0.95, max_tokens: 16384, stream: true, chat_template_kwargs: { enable_thinking: true } },
         );
-        assert.equal('top_p' in payload, false);
+        assert.equal('reasoning_effort' in payload, false);
+        assert.equal('frequency_penalty' in payload, false);
+        assert.equal('presence_penalty' in payload, false);
+        assert.equal('seed' in payload, false);
         assert.match(payload.messages[1].content, /序号<TAB>文章ID<TAB>曝光量<TAB>清洗后的正文/);
-        return Response.json({
-            model: payload.model,
-            choices: [{ message: { content: validModelContent }, finish_reason: 'stop' }],
-            usage: { prompt_tokens: 20, completion_tokens: 30 },
-        });
+        return new Response([
+            `data: ${JSON.stringify({ model: payload.model, choices: [{ delta: { reasoning_content: '内部推理不应进入话题输出' } }] })}`,
+            '',
+            `data: ${JSON.stringify({ choices: [{ delta: { content: validModelContent }, finish_reason: 'stop' }], usage: { prompt_tokens: 20, completion_tokens: 30 } })}`,
+            '',
+            'data: [DONE]',
+            '',
+        ].join('\n'), { headers: { 'content-type': 'text/event-stream' } });
     };
     const result = await generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries);
-    assert.equal(result.model_id, 'moonshotai/kimi-k3');
+    assert.equal(result.model_id, 'nvidia/nemotron-3-ultra-550b-a55b');
+    assert.equal(result.groups.length, 3);
 } finally {
     globalThis.fetch = originalFetch;
 }
-assert.equal(fallbackOpenRouterCount, 1);
-assert.equal(fallbackNvidiaCount, 1);
+assert.equal(fallbackOpenRouterCount, 0);
+assert.equal(fallbackNvidiaCount, 2);
 
 let asyncNvidiaRequestCount = 0;
 try {
     globalThis.fetch = async (url, options) => {
         asyncNvidiaRequestCount += 1;
         if (asyncNvidiaRequestCount === 1) {
-            assert.equal(String(url), aiConfig.ai_api);
-            return new Response('', { status: 503 });
-        }
-        if (asyncNvidiaRequestCount === 2) {
             assert.equal(String(url), aiConfig.nvidia_api);
             assert.equal(options.method, 'POST');
             return new Response('', {
@@ -339,16 +353,16 @@ try {
         assert.equal(String(url), 'https://integrate.api.nvidia.com/v1/status/123e4567-e89b-12d3-a456-426614174000');
         assert.equal(options.method, 'GET');
         return Response.json({
-            model: 'moonshotai/kimi-k3',
+            model: 'stepfun-ai/step-5-preview',
             choices: [{ message: { content: validModelContent }, finish_reason: 'stop' }],
         });
     };
     const result = await generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries);
-    assert.equal(result.model_id, 'moonshotai/kimi-k3');
+    assert.equal(result.model_id, 'stepfun-ai/step-5-preview');
 } finally {
     globalThis.fetch = originalFetch;
 }
-assert.equal(asyncNvidiaRequestCount, 3);
+assert.equal(asyncNvidiaRequestCount, 2);
 
 let validationFallbackRequestCount = 0;
 try {
@@ -361,7 +375,7 @@ try {
         });
     };
     const result = await generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries);
-    assert.equal(result.model_id, 'moonshotai/kimi-k3');
+    assert.equal(result.model_id, 'nvidia/nemotron-3-ultra-550b-a55b');
 } finally {
     globalThis.fetch = originalFetch;
 }
@@ -375,14 +389,109 @@ try {
     };
     await assert.rejects(
         () => generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries),
-        error => error?.code === 'AI_BOTH_PROVIDERS_FAILED'
+        error => error?.code === 'AI_ALL_MODELS_FAILED'
             && error.message.includes('OpenRouter')
-            && error.message.includes('NVIDIA Kimi K3'),
+            && error.message.includes('stepfun-ai/step-5-preview')
+            && error.message.includes('nvidia/nemotron-3-ultra-550b-a55b'),
     );
 } finally {
     globalThis.fetch = originalFetch;
 }
-assert.equal(bothFailRequestCount, 2);
+assert.equal(bothFailRequestCount, 3);
+
+// Every supported failure must advance through both NVIDIA models to OpenRouter.
+for (const failureType of ['http', 'network', 'timeout', 'json', 'empty', 'validation', 'stream']) {
+    const requestedModels = [];
+    try {
+        globalThis.fetch = async (url, options) => {
+            const payload = JSON.parse(options.body);
+            requestedModels.push(payload.model);
+            if (String(url) === aiConfig.ai_api) {
+                assert.deepEqual(payload.reasoning, { effort: 'low', exclude: true });
+                assert.equal(payload.stream, false);
+                assert.equal(options.headers.authorization, 'Bearer test-openrouter-key');
+                return Response.json({
+                    model: 'test/actual-free-model:free',
+                    choices: [{ message: { content: validModelContent }, finish_reason: 'stop' }],
+                });
+            }
+            assert.equal(options.headers.authorization, 'Bearer test-nvidia-key');
+            if (failureType === 'http') return new Response('', { status: 429 });
+            if (failureType === 'network') throw new TypeError('fetch failed');
+            if (failureType === 'timeout') throw new DOMException('timed out', 'AbortError');
+            if (failureType === 'json') return new Response('invalid JSON');
+            if (failureType === 'stream') {
+                return new Response('data: {"error":{"code":500,"message":"upstream failed"}}\n\n', {
+                    headers: { 'content-type': 'text/event-stream' },
+                });
+            }
+            return Response.json({ choices: [{ message: { content: failureType === 'empty' ? '' : '无效话题格式' } }] });
+        };
+        const result = await generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries);
+        assert.equal(result.model, 'test/actual-free-model:free');
+        assert.equal(result.groups.length, 3);
+        assert.deepEqual(requestedModels, [...aiConfig.nvidia_models, 'openrouter/free'], failureType);
+    } finally {
+        globalThis.fetch = originalFetch;
+    }
+}
+
+// The configured list determines NVIDIA priority and can contain just one model.
+for (const nvidiaModels of [[...aiConfig.nvidia_models].reverse(), [aiConfig.nvidia_models[1]]]) {
+    const requestedModels = [];
+    try {
+        globalThis.fetch = async (_url, options) => {
+            const payload = JSON.parse(options.body);
+            requestedModels.push(payload.model);
+            return Response.json({ choices: [{ message: { content: validModelContent }, finish_reason: 'stop' }] });
+        };
+        const result = await generateWithFallback({ ...aiConfig, nvidia_models: nvidiaModels }, ['test-openrouter-key'], ['test-nvidia-key'], entries);
+        assert.equal(result.model_id, nvidiaModels[0]);
+        assert.deepEqual(requestedModels, [nvidiaModels[0]]);
+    } finally {
+        globalThis.fetch = originalFetch;
+    }
+}
+
+// Simulate full timeout consumption without waiting, and inspect the assigned budgets.
+const originalDateNow = Date.now;
+const originalBudgetLog = console.log;
+const budgetEvents = [];
+let fakeNow = originalDateNow();
+try {
+    Date.now = () => fakeNow;
+    console.log = line => { budgetEvents.push(JSON.parse(line)); };
+    globalThis.fetch = async (_url, options) => {
+        const payload = JSON.parse(options.body);
+        fakeNow += 500_000;
+        if (payload.model !== 'openrouter/free') return new Response('', { status: 503 });
+        return Response.json({ model: 'test/free-model:free', choices: [{ message: { content: validModelContent } }] });
+    };
+    await generateWithFallback({ ...aiConfig, nvidia_request_timeout_ms: 1_200_000, openrouter_request_timeout_ms: 1_200_000, overall_task_timeout_ms: 1_500_000 }, ['test-openrouter-key'], ['test-nvidia-key'], entries);
+    assert.deepEqual(budgetEvents.filter(event => event.event === 'REQUEST_START').map(event => event.timeout_ms), [500_000, 500_000, 500_000]);
+} finally {
+    Date.now = originalDateNow;
+    console.log = originalBudgetLog;
+    globalThis.fetch = originalFetch;
+}
+
+let exhaustedBudgetRequests = 0;
+try {
+    Date.now = () => fakeNow;
+    globalThis.fetch = async () => {
+        exhaustedBudgetRequests += 1;
+        fakeNow += aiConfig.overall_task_timeout_ms;
+        return new Response('', { status: 503 });
+    };
+    await assert.rejects(
+        () => generateWithFallback(aiConfig, ['test-openrouter-key'], ['test-nvidia-key'], entries),
+        error => error?.code === 'AI_FALLBACK_BUDGET_EXHAUSTED' && error.message.includes('stepfun-ai/step-5-preview'),
+    );
+    assert.equal(exhaustedBudgetRequests, 1);
+} finally {
+    Date.now = originalDateNow;
+    globalThis.fetch = originalFetch;
+}
 
 const diagnosticArtifact = fs.readFileSync(modelOutputArtifactUrl, 'utf8');
 assert.match(diagnosticArtifact, /record_type: request/);

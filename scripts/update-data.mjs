@@ -23,12 +23,23 @@ let modelOutputArtifactInitialized = false;
 let modelOutputArtifactTruncated = false;
 
 const NVIDIA_MODEL_SPECS = Object.freeze({
-    'moonshotai/kimi-k3': Object.freeze({
-        temperature: 1,
-        max_tokens: 16384,
-        seed: 0,
+    // NVIDIA API: https://docs.api.nvidia.com/nim/reference/stepfun-ai-step-5-preview-infer
+    'stepfun-ai/step-5-preview': Object.freeze({
+        temperature: 0.5,
+        top_p: 1,
+        // This budget includes both reasoning and the final answer.
+        max_tokens: 32768,
+        frequency_penalty: 0,
+        presence_penalty: 0,
         stream: true,
-        reasoning_effort: 'low',
+    }),
+    // NVIDIA build page: https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b
+    'nvidia/nemotron-3-ultra-550b-a55b': Object.freeze({
+        temperature: 1,
+        top_p: 0.95,
+        max_tokens: 16384,
+        stream: true,
+        chat_template_kwargs: Object.freeze({ enable_thinking: true }),
     }),
 });
 
@@ -408,8 +419,10 @@ function readConfig() {
     if (String(config.openrouter_model || '') !== 'openrouter/free') {
         throw new PipelineError('openrouter_model 必须固定为 openrouter/free', { code: 'CONFIG_INVALID' });
     }
-    if (!NVIDIA_MODEL_SPECS[String(config.nvidia_fallback_model || '')]) {
-        throw new PipelineError('nvidia_fallback_model 当前只支持 moonshotai/kimi-k3', { code: 'CONFIG_INVALID' });
+    if (!Array.isArray(config.nvidia_models) || config.nvidia_models.length < 1
+        || new Set(config.nvidia_models).size !== config.nvidia_models.length
+        || config.nvidia_models.some(modelId => typeof modelId !== 'string' || !Object.hasOwn(NVIDIA_MODEL_SPECS, modelId))) {
+        throw new PipelineError(`nvidia_models 必须是非空且无重复的模型列表，支持 ${Object.keys(NVIDIA_MODEL_SPECS).join(', ')}`, { code: 'CONFIG_INVALID' });
     }
     if (!Number.isInteger(Number(config.minimum_topics)) || Number(config.minimum_topics) < 1 || Number(config.minimum_topics) > 15) {
         throw new PipelineError('minimum_topics 必须是 1 到 15 的整数');
@@ -970,7 +983,7 @@ async function callNvidia(config, apiKey, modelId, messages, timeoutMs, attempt 
 
 function getNvidiaModelOptions(modelId) {
     const spec = NVIDIA_MODEL_SPECS[modelId];
-    if (!spec) throw new PipelineError('NVIDIA 兜底模型不在允许列表中', { code: 'MODEL_NOT_ALLOWED', model: modelId });
+    if (!Object.hasOwn(NVIDIA_MODEL_SPECS, modelId)) throw new PipelineError('NVIDIA 模型不在允许列表中', { code: 'MODEL_NOT_ALLOWED', model: modelId });
     return {
         ...spec,
         ...(spec.chat_template_kwargs ? { chat_template_kwargs: { ...spec.chat_template_kwargs } } : {}),
@@ -1243,18 +1256,17 @@ function buildAiMessages(entries) {
     ];
 }
 
-async function generateNvidia(config, apiKeys, entries, timeoutMs = Number(config.nvidia_request_timeout_ms)) {
+async function generateNvidia(config, apiKeys, entries, timeoutMs = Number(config.nvidia_request_timeout_ms), modelId = config.nvidia_models[0], attempt = 1) {
     if (!Array.isArray(apiKeys) || apiKeys.length < 1) {
         throw new PipelineError('NVIDIA API Key 池为空', { code: 'API_KEY_LIST_MISSING' });
     }
     const messages = buildAiMessages(entries);
-    const modelId = String(config.nvidia_fallback_model);
     const apiKey = shuffle(apiKeys)[0];
     const modelOptions = getNvidiaModelOptions(modelId);
     const inputChars = messages.reduce((sum, message) => sum + String(message.content || '').length, 0);
     const requestStartedAt = Date.now();
     safeLog('info', 'ai', 'REQUEST_START', {
-        provider: 'nvidia', attempt: 1, request_limit: 1, model_id: modelId,
+        provider: 'nvidia', attempt, request_limit: 1, model_id: modelId,
         timeout_ms: timeoutMs, input_posts: entries.length, input_chars: inputChars,
         message_count: messages.length, stream: modelOptions.stream,
         transport_headers_timeout_ms: timeoutMs, transport_body_timeout_ms: timeoutMs,
@@ -1263,12 +1275,12 @@ async function generateNvidia(config, apiKeys, entries, timeoutMs = Number(confi
         reasoning_effort: modelOptions.reasoning_effort,
     });
     try {
-        const response = await callNvidia(config, apiKey, modelId, messages, timeoutMs, 1);
+        const response = await callNvidia(config, apiKey, modelId, messages, timeoutMs, attempt);
         logCompleteModelOutput('info', 'nvidia', response.model || modelId, response.content);
-        appendModelOutputArtifact({ provider: 'nvidia', modelId: response.model || modelId, attempt: 1, content: response.content, response });
+        appendModelOutputArtifact({ provider: 'nvidia', modelId: response.model || modelId, attempt, content: response.content, response });
         const parsed = parseAIOutput(response.content, entries, Number(config.minimum_topics));
         safeLog('info', 'ai', 'REQUEST_SUCCESS', {
-            provider: 'nvidia', attempt: 1, duration_ms: Date.now() - requestStartedAt,
+            provider: 'nvidia', attempt, duration_ms: Date.now() - requestStartedAt,
             model_id: modelId, model: response.model || modelId,
             finish_reason: response.finishReason || undefined,
             response_bytes: response.responseBytes || undefined,
@@ -1281,7 +1293,7 @@ async function generateNvidia(config, apiKeys, entries, timeoutMs = Number(confi
     } catch (error) {
         const failure = error instanceof PipelineError ? error : new PipelineError('NVIDIA AI 处理失败', { code: 'AI_UNEXPECTED_ERROR', model: modelId });
         safeLog('warn', 'ai', 'REQUEST_FAILED_NO_RETRY', {
-            provider: 'nvidia', attempt: 1, code: failure.code,
+            provider: 'nvidia', attempt, code: failure.code,
             duration_ms: Date.now() - requestStartedAt, status: failure.status || undefined,
             model: failure.model || modelId, parsed_topics: failure.parsedTopics || undefined,
             detail: failure.message,
@@ -1293,7 +1305,7 @@ async function generateNvidia(config, apiKeys, entries, timeoutMs = Number(confi
 async function generateOnce(config, keys, entries, timeoutMs = Number(config.openrouter_request_timeout_ms)) {
     const messages = buildAiMessages(entries);
     const requestStartedAt = Date.now();
-    safeLog('info', 'ai', 'REQUEST_START', { request_limit: 1, provider: 'openrouter' });
+    safeLog('info', 'ai', 'REQUEST_START', { request_limit: 1, provider: 'openrouter', model_id: config.openrouter_model, timeout_ms: timeoutMs });
     try {
         const response = await callOpenRouter(config, keys[0], messages, timeoutMs, 1);
         logCompleteModelOutput('info', 'openrouter', response.model || config.openrouter_model, response.content);
@@ -1368,37 +1380,39 @@ async function generateOnce(config, keys, entries, timeoutMs = Number(config.ope
 
 async function generateWithFallback(config, openRouterKeys, nvidiaKeys, entries) {
     const deadline = Date.now() + Number(config.overall_task_timeout_ms);
-    const openRouterTimeoutMs = Math.min(
-        Number(config.openrouter_request_timeout_ms),
-        Math.max(1_000, deadline - Date.now()),
-    );
-    let primaryFailure;
-    try {
-        return await generateOnce(config, openRouterKeys, entries, openRouterTimeoutMs);
-    } catch (error) {
-        primaryFailure = error instanceof PipelineError ? error : new PipelineError('OpenRouter 处理失败', { code: 'AI_UNEXPECTED_ERROR' });
-        safeLog('warn', 'ai', 'FALLBACK_START', {
-            from_provider: 'openrouter', to_provider: 'nvidia',
-            primary_code: primaryFailure.code, primary_detail: primaryFailure.message,
-            fallback_model: config.nvidia_fallback_model,
-        });
+    const candidates = [
+        ...config.nvidia_models.map(model => ({ provider: 'nvidia', model, limitMs: Number(config.nvidia_request_timeout_ms) })),
+        { provider: 'openrouter', model: config.openrouter_model, limitMs: Number(config.openrouter_request_timeout_ms) },
+    ];
+    const failures = [];
+    for (const [index, candidate] of candidates.entries()) {
+        const remainingMs = deadline - Date.now();
+        // Share the remaining budget so slow models leave time for every fallback.
+        const timeoutMs = Math.min(candidate.limitMs, Math.floor(remainingMs / (candidates.length - index)));
+        if (timeoutMs < 1_000) {
+            throw new PipelineError(`AI 总预算不足，无法请求 ${candidate.model}；${failures.join('；')}`, {
+                code: 'AI_FALLBACK_BUDGET_EXHAUSTED', model: candidate.model,
+            });
+        }
+        try {
+            if (candidate.provider === 'nvidia') {
+                return await generateNvidia(config, nvidiaKeys, entries, timeoutMs, candidate.model, index + 1);
+            }
+            return await generateOnce(config, openRouterKeys, entries, timeoutMs);
+        } catch (error) {
+            const failure = error instanceof PipelineError ? error : new PipelineError('AI 处理失败', { code: 'AI_UNEXPECTED_ERROR' });
+            failures.push(`${candidate.provider} ${candidate.model} 失败（${failure.code}）：${failure.message}`);
+            const next = candidates[index + 1];
+            if (next) {
+                safeLog('warn', 'ai', 'FALLBACK_START', {
+                    from_provider: candidate.provider, from_model: candidate.model,
+                    to_provider: next.provider, fallback_model: next.model,
+                    primary_code: failure.code, primary_detail: failure.message,
+                });
+            }
+        }
     }
-
-    const remainingMs = deadline - Date.now();
-    if (remainingMs < 1_000) {
-        throw new PipelineError(`OpenRouter 失败且已无 NVIDIA 兜底时间：${primaryFailure.message}`, {
-            code: 'AI_FALLBACK_BUDGET_EXHAUSTED',
-        });
-    }
-    try {
-        return await generateNvidia(config, nvidiaKeys, entries, Math.min(Number(config.nvidia_request_timeout_ms), remainingMs));
-    } catch (error) {
-        const fallbackFailure = error instanceof PipelineError ? error : new PipelineError('NVIDIA 处理失败', { code: 'AI_UNEXPECTED_ERROR' });
-        throw new PipelineError(`OpenRouter 失败（${primaryFailure.code}）：${primaryFailure.message}；NVIDIA Kimi K3 兜底失败（${fallbackFailure.code}）：${fallbackFailure.message}`, {
-            code: 'AI_BOTH_PROVIDERS_FAILED',
-            model: config.nvidia_fallback_model,
-        });
-    }
+    throw new PipelineError(`所有 AI 候选模型均失败：${failures.join('；')}`, { code: 'AI_ALL_MODELS_FAILED' });
 }
 
 async function main() {
@@ -1408,7 +1422,7 @@ async function main() {
         stream_idle_timeout_ms: Number(value.stream_idle_timeout_ms),
         overall_task_timeout_ms: Number(value.overall_task_timeout_ms),
         openrouter_model: value.openrouter_model,
-        nvidia_fallback_model: value.nvidia_fallback_model,
+        nvidia_models: value.nvidia_models,
     }));
     const credentials = await runPhase('credentials', async () => ({
         sourceUrl: readSecret('XBANGDAN_API_URL'),
