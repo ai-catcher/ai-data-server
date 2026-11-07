@@ -3808,31 +3808,31 @@
       "c": "finance"
     }
   ],
-  "generated_at": "2026-11-07T01:15:30.441Z",
+  "generated_at": "2026-11-07T01:31:16.715Z",
   "model_id": "stepfun-ai/step-5-preview",
   "topics": [
     {
-      "title": "美股大跌与民主党AI禁令争议",
-      "meta": "4 帖 · 4 人在说 · 100.9万曝光",
-      "median": "中位数 18.9万 曝光",
-      "views": "100.9万",
+      "title": "民主党胜选后AI监管与数据中心争议",
+      "meta": "7 帖 · 5 人在说 · 140.5万曝光",
+      "median": "中位数 11.7万 曝光",
+      "views": "140.5万",
       "stats": {
-        "posts": 4,
-        "people": 4,
-        "total_views": 1009446,
-        "median_views": 188959.5,
-        "total_likes": 1481,
-        "max_rate": 6047
+        "posts": 7,
+        "people": 5,
+        "total_views": 1405234,
+        "median_views": 116578,
+        "total_likes": 3767,
+        "max_rate": 9701
       },
       "tags": [
-        "#美股",
         "#民主党",
-        "#AI",
-        "#选举",
-        "#特朗普",
-        "#热点话题",
-        "#X热帖",
-        "#AI整理"
+        "#AI监管",
+        "#数据中心",
+        "#马斯克",
+        "#社区反对",
+        "#半导体",
+        "#股市",
+        "#热点话题"
       ],
       "samples": [
         {
@@ -3845,64 +3845,6 @@
           "raw_views": 514949
         },
         {
-          "id": "2118522789443580402",
-          "url": "https://x.com/_FORAB/status/2118522789443580402",
-          "text": "特朗普就本轮股市大跌发表声明。他认为本轮下跌，是选举结果民主党造成的，导致大家 401(k) 养老金账户也因持仓，跟着缩水。他让大家不要恐慌。  昨晚对冲基金被",
-          "handle": "@_FORAB",
-          "name": "AB Kuai.Dong",
-          "views": "23.4万",
-          "raw_views": 233840
-        },
-        {
-          "id": "2118525424775119131",
-          "url": "https://x.com/broleon/status/2118525424775119131",
-          "text": "据信这个👆🏻女议员的这个推就是煽动美股雪崩的蝴蝶🦋翅膀。  马斯克等一众大佬都发推嘲讽，估计气的咬牙切齿。  早上国内朋友开玩笑说，如果美国投票对国人开放的话，",
-          "handle": "@broleon",
-          "name": "土澳大狮兄BroLeon | Crypto | AI | Stocks",
-          "views": "14.4万",
-          "raw_views": 144079
-        }
-      ],
-      "source_ids": [
-        "2118522986416476306",
-        "2118522789443580402",
-        "2118525424775119131",
-        "2118560783034663245"
-      ],
-      "source_indices": [
-        12,
-        39,
-        73,
-        93
-      ],
-      "searchUrl": "https://x.com/search?q=%E7%BE%8E%E8%82%A1%E5%A4%A7%E8%B7%8C%E4%B8%8E%E6%B0%91%E4%B8%BB%E5%85%9AAI%E7%A6%81%E4%BB%A4%E4%BA%89%E8%AE%AE&src=typed_query&f=live",
-      "rank": 1
-    },
-    {
-      "title": "AI数据中心遭社区反弹与贷款拍卖",
-      "meta": "5 帖 · 3 人在说 · 77.4万曝光",
-      "median": "中位数 10.9万 曝光",
-      "views": "77.4万",
-      "stats": {
-        "posts": 5,
-        "people": 3,
-        "total_views": 773707,
-        "median_views": 108584,
-        "total_likes": 2978,
-        "max_rate": 9701
-      },
-      "tags": [
-        "#AI数据中心",
-        "#社区反对",
-        "#马斯克",
-        "#监管",
-        "#半导体",
-        "#热点话题",
-        "#X热帖",
-        "#AI整理"
-      ],
-      "samples": [
-        {
           "id": "2118630899239756125",
           "url": "https://x.com/_FORAB/status/2118630899239756125",
           "text": "下午跟几位熬夜不睡觉的美国老哥，打了电话，聊了聊这波叫停 AI、数据中心潮，他们说身边绝大多数本地居民和同事，都非常支持暂停这东西。  因为它不仅让当地人，支付",
@@ -3912,65 +3854,144 @@
           "raw_views": 352745
         },
         {
-          "id": "2118717297116229899",
-          "url": "https://x.com/mubeitech/status/2118717297116229899",
-          "text": "得州三十六年头一回选出民主党，转头就找马斯克立规矩。  刚当选得州州长的吉娜·希诺霍萨，在胜选采访里被问到马斯克和 AI 数据中心。 面对镜头，她把态度摆在桌面",
-          "handle": "@mubeitech",
-          "name": "墓碑科技",
-          "views": "8.3万",
-          "raw_views": 83356
-        },
-        {
-          "id": "2118747397199405368",
-          "url": "https://x.com/Bluke520/status/2118747397199405368",
-          "text": "埃隆不愧是世界首富👍一下子就找到了破局之法：  马斯克这次学聪明了，不跟监管硬碰硬，改成先把账算给当地人听。  德州的教训就在眼前，数据中心建得太快，社区反弹起",
-          "handle": "@Bluke520",
-          "name": "Bluke Wu",
-          "views": "7.9万",
-          "raw_views": 78979
+          "id": "2118560783034663245",
+          "url": "https://x.com/0427SMtieshou/status/2118560783034663245",
+          "text": "我怎么感觉再过两年美国总统大选，共和党还能赢呢？  民主党要禁AI研发，股市瞬间下跌。  选民瞬间傻眼了",
+          "handle": "@0427SMtieshou",
+          "name": "铁手（3卧槽版）",
+          "views": "11.7万",
+          "raw_views": 116578
         }
       ],
       "source_ids": [
+        "2118522986416476306",
         "2118630899239756125",
         "2118696379073847542",
-        "2118616876876276110",
+        "2118560783034663245",
         "2118717297116229899",
-        "2118747397199405368"
+        "2118747397199405368",
+        "2118616876876276110"
       ],
       "source_indices": [
+        12,
         20,
         68,
-        101,
+        93,
         133,
-        148
+        148,
+        101
       ],
-      "searchUrl": "https://x.com/search?q=AI%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E9%81%AD%E7%A4%BE%E5%8C%BA%E5%8F%8D%E5%BC%B9%E4%B8%8E%E8%B4%B7%E6%AC%BE%E6%8B%8D%E5%8D%96&src=typed_query&f=live",
-      "rank": 2
+      "searchUrl": "https://x.com/search?q=%E6%B0%91%E4%B8%BB%E5%85%9A%E8%83%9C%E9%80%89%E5%90%8EAI%E7%9B%91%E7%AE%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE&src=typed_query&f=live",
+      "rank": 1
     },
     {
-      "title": "民主党中期翻盘后人事布局与选民后悔",
-      "meta": "6 帖 · 5 人在说 · 72.4万曝光",
-      "median": "中位数 12.5万 曝光",
-      "views": "72.4万",
+      "title": "美股大跌与AI半导体抛售潮",
+      "meta": "8 帖 · 7 人在说 · 111.8万曝光",
+      "median": "中位数 11.6万 曝光",
+      "views": "111.8万",
       "stats": {
-        "posts": 6,
-        "people": 5,
-        "total_views": 724496,
-        "median_views": 124984.5,
-        "total_likes": 2510,
-        "max_rate": 10595
+        "posts": 8,
+        "people": 7,
+        "total_views": 1117940,
+        "median_views": 115964.5,
+        "total_likes": 3183,
+        "max_rate": 8937
       },
       "tags": [
-        "#民主党",
-        "#中期选举",
-        "#人事",
-        "#选民",
-        "#特朗普",
+        "#美股",
+        "#半导体",
+        "#AI",
+        "#大跌",
+        "#抄底",
         "#热点话题",
         "#X热帖",
         "#AI整理"
       ],
       "samples": [
+        {
+          "id": "2118522789443580402",
+          "url": "https://x.com/_FORAB/status/2118522789443580402",
+          "text": "特朗普就本轮股市大跌发表声明。他认为本轮下跌，是选举结果民主党造成的，导致大家 401(k) 养老金账户也因持仓，跟着缩水。他让大家不要恐慌。  昨晚对冲基金被",
+          "handle": "@_FORAB",
+          "name": "AB Kuai.Dong",
+          "views": "23.4万",
+          "raw_views": 233840
+        },
+        {
+          "id": "2118511944747606401",
+          "url": "https://x.com/alanshao111/status/2118511944747606401",
+          "text": "如果你今天没跌超过5%  那我不要和你说话",
+          "handle": "@alanshao111",
+          "name": "邵艾伦Alan（薄肌版）",
+          "views": "20.3万",
+          "raw_views": 203031
+        },
+        {
+          "id": "2118706189009891821",
+          "url": "https://x.com/thankucrypto/status/2118706189009891821",
+          "text": "看到的第一时间，做空美光。 https://t.co/asimocscyz",
+          "handle": "@thankucrypto",
+          "name": "allincrypto 熬鹰资本 🇨🇳",
+          "views": "20.0万",
+          "raw_views": 200421
+        }
+      ],
+      "source_ids": [
+        "2118522789443580402",
+        "2118525424775119131",
+        "2118511944747606401",
+        "2118706189009891821",
+        "2118695995148320833",
+        "2118580072944902301",
+        "2118657536610140496",
+        "2118513147233624466"
+      ],
+      "source_indices": [
+        39,
+        73,
+        45,
+        46,
+        125,
+        126,
+        140,
+        149
+      ],
+      "searchUrl": "https://x.com/search?q=%E7%BE%8E%E8%82%A1%E5%A4%A7%E8%B7%8C%E4%B8%8EAI%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8A%9B%E5%94%AE%E6%BD%AE&src=typed_query&f=live",
+      "rank": 2
+    },
+    {
+      "title": "中期选举民主党翻盘与阵营反应",
+      "meta": "6 帖 · 5 人在说 · 76.0万曝光",
+      "median": "中位数 13.6万 曝光",
+      "views": "76.0万",
+      "stats": {
+        "posts": 6,
+        "people": 5,
+        "total_views": 759915,
+        "median_views": 136279,
+        "total_likes": 3728,
+        "max_rate": 10595
+      },
+      "tags": [
+        "#中期选举",
+        "#民主党",
+        "#共和党",
+        "#特朗普",
+        "#万斯",
+        "#热点话题",
+        "#X热帖",
+        "#AI整理"
+      ],
+      "samples": [
+        {
+          "id": "2118629269043831184",
+          "url": "https://x.com/kylewmi/status/2118629269043831184",
+          "text": "川普中期选举输了，民主党参议员 Jon Ossoff 火了。  39 岁的青年才俊，口才出色。在佐治亚州以 59% 对 41% 大胜特朗普力挺的共和党人 Mik",
+          "handle": "@kylewmi",
+          "name": "Kyle_13 (烹饪版)👨‍🍳",
+          "views": "16.3万",
+          "raw_views": 162634
+        },
         {
           "id": "2118652713021907185",
           "url": "https://x.com/mubeitech/status/2118652713021907185",
@@ -3988,38 +4009,95 @@
           "name": "AB Kuai.Dong",
           "views": "15.0万",
           "raw_views": 149804
-        },
-        {
-          "id": "2118526172325957969",
-          "url": "https://x.com/wuk_bitcoin/status/2118526172325957969",
-          "text": "Lumen第二次路演顺利结束 感谢各位朋友参与，未来继续同行",
-          "handle": "@wuk_bitcoin",
-          "name": "Donato",
-          "views": "12.7万",
-          "raw_views": 127215
         }
       ],
       "source_ids": [
-        "2118526172325957969",
+        "2118629269043831184",
         "2118652713021907185",
-        "2118553495267942625",
         "2118521144387227877",
         "2118581494092587216",
+        "2118553495267942625",
         "2118546270147236152"
       ],
       "source_indices": [
-        82,
+        62,
         69,
-        70,
         85,
         119,
+        70,
         137
       ],
-      "searchUrl": "https://x.com/search?q=%E6%B0%91%E4%B8%BB%E5%85%9A%E4%B8%AD%E6%9C%9F%E7%BF%BB%E7%9B%98%E5%90%8E%E4%BA%BA%E4%BA%8B%E5%B8%83%E5%B1%80%E4%B8%8E%E9%80%89%E6%B0%91%E5%90%8E%E6%82%94&src=typed_query&f=live",
+      "searchUrl": "https://x.com/search?q=%E4%B8%AD%E6%9C%9F%E9%80%89%E4%B8%BE%E6%B0%91%E4%B8%BB%E5%85%9A%E7%BF%BB%E7%9B%98%E4%B8%8E%E9%98%B5%E8%90%A5%E5%8F%8D%E5%BA%94&src=typed_query&f=live",
       "rank": 3
     },
     {
-      "title": "中日民间旅游与观感争议",
+      "title": "马斯克与CZ孙宇晨互动升温",
+      "meta": "4 帖 · 4 人在说 · 60.4万曝光",
+      "median": "中位数 16.9万 曝光",
+      "views": "60.4万",
+      "stats": {
+        "posts": 4,
+        "people": 4,
+        "total_views": 604456,
+        "median_views": 169036,
+        "total_likes": 1597,
+        "max_rate": 5357
+      },
+      "tags": [
+        "#马斯克",
+        "#CZ",
+        "#孙宇晨",
+        "#币圈",
+        "#热点话题",
+        "#X热帖",
+        "#AI整理"
+      ],
+      "samples": [
+        {
+          "id": "2118602416400818392",
+          "url": "https://x.com/CaptainLufei999/status/2118602416400818392",
+          "text": "不得不承认 “孙宇晨” 在判断未来趋势方面 确实是最牛逼。 和金晨的连麦说三件事： 1，说加密货币安全性，之后，bnb出事 2，说看美债不悲观，之后，美债价格上",
+          "handle": "@CaptainLufei999",
+          "name": "自己造船的路飞（装逼中）",
+          "views": "17.8万",
+          "raw_views": 177867
+        },
+        {
+          "id": "2118608131140018537",
+          "url": "https://x.com/_FORAB/status/2118608131140018537",
+          "text": "为何马斯克最近老是调侃 CZ  而且还知道这张图片的梗 🤣  现在 X 上又多了一对组合 https://t.co/VxVbsAsnDn",
+          "handle": "@_FORAB",
+          "name": "AB Kuai.Dong",
+          "views": "17.1万",
+          "raw_views": 171189
+        },
+        {
+          "id": "2118626552644784598",
+          "url": "https://x.com/nftfafafa/status/2118626552644784598",
+          "text": "为什么Elon到处调侃CZ 又不直接回复CZ呢？  马斯克调侃CZ的推文，每个CZ都回复了，马斯克从来不回复CZ https://t.co/MrxjwFsQH7",
+          "handle": "@nftfafafa",
+          "name": "北讲区块链",
+          "views": "16.7万",
+          "raw_views": 166883
+        }
+      ],
+      "source_ids": [
+        "2118608131140018537",
+        "2118626552644784598",
+        "2118602416400818392",
+        "2118692610638528706"
+      ],
+      "source_indices": [
+        58,
+        60,
+        53,
+        124
+      ],
+      "searchUrl": "https://x.com/search?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E4%B8%8ECZ%E5%AD%99%E5%AE%87%E6%99%A8%E4%BA%92%E5%8A%A8%E5%8D%87%E6%B8%A9&src=typed_query&f=live",
+      "rank": 4
+    },
+    {
+      "title": "中国人赴日旅游与中日民间情绪",
       "meta": "3 帖 · 3 人在说 · 55.4万曝光",
       "median": "中位数 10.4万 曝光",
       "views": "55.4万",
@@ -4032,11 +4110,10 @@
         "max_rate": 5952
       },
       "tags": [
-        "#中日",
-        "#旅游",
-        "#日本",
-        "#民间交流",
+        "#赴日旅游",
         "#中国游客",
+        "#中日关系",
+        "#民间情绪",
         "#热点话题",
         "#X热帖",
         "#AI整理"
@@ -4080,27 +4157,26 @@
         103,
         136
       ],
-      "searchUrl": "https://x.com/search?q=%E4%B8%AD%E6%97%A5%E6%B0%91%E9%97%B4%E6%97%85%E6%B8%B8%E4%B8%8E%E8%A7%82%E6%84%9F%E4%BA%89%E8%AE%AE&src=typed_query&f=live",
-      "rank": 4
+      "searchUrl": "https://x.com/search?q=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E8%B5%B4%E6%97%A5%E6%97%85%E6%B8%B8%E4%B8%8E%E4%B8%AD%E6%97%A5%E6%B0%91%E9%97%B4%E6%83%85%E7%BB%AA&src=typed_query&f=live",
+      "rank": 5
     },
     {
-      "title": "马斯克与黄仁勋被国会盯上",
-      "meta": "2 帖 · 2 人在说 · 52.6万曝光",
-      "median": "中位数 26.3万 曝光",
-      "views": "52.6万",
+      "title": "马斯克被指压错阵营并遭清算",
+      "meta": "2 帖 · 2 人在说 · 53.1万曝光",
+      "median": "中位数 26.6万 曝光",
+      "views": "53.1万",
       "stats": {
         "posts": 2,
         "people": 2,
-        "total_views": 525522,
-        "median_views": 262761,
-        "total_likes": 1323,
-        "max_rate": 8737
+        "total_views": 531028,
+        "median_views": 265514,
+        "total_likes": 2628,
+        "max_rate": 17400
       },
       "tags": [
         "#马斯克",
-        "#黄仁勋",
-        "#国会",
         "#民主党",
+        "#清算",
         "#科技巨头",
         "#热点话题",
         "#X热帖",
@@ -4117,6 +4193,103 @@
           "raw_views": 271942
         },
         {
+          "id": "2118679727892230465",
+          "url": "https://x.com/AYi_AInotes/status/2118679727892230465",
+          "text": "天呐，马斯克密友重磅爆料！哪怕马斯克坐拥数千亿美元财富、手握火箭卫星，私底下却每天生活在难以想象的极端危险里。  认识了二十年的老朋友，在电视镜头前聊起全球首富",
+          "handle": "@AYi_AInotes",
+          "name": "AYi",
+          "views": "25.9万",
+          "raw_views": 259086
+        }
+      ],
+      "source_ids": [
+        "2118597316840132651",
+        "2118679727892230465"
+      ],
+      "source_indices": [
+        26,
+        31
+      ],
+      "searchUrl": "https://x.com/search?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E8%A2%AB%E6%8C%87%E5%8E%8B%E9%94%99%E9%98%B5%E8%90%A5%E5%B9%B6%E9%81%AD%E6%B8%85%E7%AE%97&src=typed_query&f=live",
+      "rank": 6
+    },
+    {
+      "title": "网红出轨连环爆料引发对峙",
+      "meta": "2 帖 · 2 人在说 · 48.6万曝光",
+      "median": "中位数 24.3万 曝光",
+      "views": "48.6万",
+      "stats": {
+        "posts": 2,
+        "people": 2,
+        "total_views": 486137,
+        "median_views": 243068.5,
+        "total_likes": 5581,
+        "max_rate": 15034
+      },
+      "tags": [
+        "#网红出轨",
+        "#情侣",
+        "#Threads",
+        "#爆料",
+        "#热点话题",
+        "#X热帖",
+        "#AI整理"
+      ],
+      "samples": [
+        {
+          "id": "2118606080729387052",
+          "url": "https://x.com/xiaoyumama9968/status/2118606080729387052",
+          "text": "不要再给我推情侣出轨那个瓜了 不是男女对立但没见过有男的出轨可以在互联网上发酵这么大的……",
+          "handle": "@xiaoyumama9968",
+          "name": "小宇妈妈",
+          "views": "26.3万",
+          "raw_views": 263095
+        },
+        {
+          "id": "2118579832682606613",
+          "url": "https://x.com/creamyhaoscar/status/2118579832682606613",
+          "text": "這宗事件是近日香港 Threads 上瘋傳的「網紅出軌」爆料，核心是男友在拍拖3週年紀念日於海旁「假驚喜、真攤牌」的對質影片。​  事件經過： 男事主與女網紅交",
+          "handle": "@creamyhaoscar",
+          "name": "OscarChan🧡Sign",
+          "views": "22.3万",
+          "raw_views": 223042
+        }
+      ],
+      "source_ids": [
+        "2118606080729387052",
+        "2118579832682606613"
+      ],
+      "source_indices": [
+        30,
+        40
+      ],
+      "searchUrl": "https://x.com/search?q=%E7%BD%91%E7%BA%A2%E5%87%BA%E8%BD%A8%E8%BF%9E%E7%8E%AF%E7%88%86%E6%96%99%E5%BC%95%E5%8F%91%E5%AF%B9%E5%B3%99&src=typed_query&f=live",
+      "rank": 7
+    },
+    {
+      "title": "黄仁勋被国会传唤与涉华言论",
+      "meta": "2 帖 · 2 人在说 · 38.9万曝光",
+      "median": "中位数 19.4万 曝光",
+      "views": "38.9万",
+      "stats": {
+        "posts": 2,
+        "people": 2,
+        "total_views": 388680,
+        "median_views": 194340,
+        "total_likes": 1420,
+        "max_rate": 8737
+      },
+      "tags": [
+        "#黄仁勋",
+        "#国会",
+        "#听证",
+        "#996",
+        "#热点话题",
+        "#X热帖",
+        "#AI整理"
+      ],
+      "samples": [
+        {
           "id": "2118533801433608686",
           "url": "https://x.com/_FORAB/status/2118533801433608686",
           "text": "没想到是黄仁勋，率先要被拉去国会了。美国众议院三个委员会主席，联名写信给英伟达老板黄仁勋，要他到国会参加一场闭门听证。  要求他澄清与 Alice Huang ",
@@ -4124,86 +4297,94 @@
           "name": "AB Kuai.Dong",
           "views": "25.4万",
           "raw_views": 253580
+        },
+        {
+          "id": "2118591793252147470",
+          "url": "https://x.com/interr_x/status/2118591793252147470",
+          "text": "黄仁勋：996是他们的文化，他们是世界上最有干劲的一群人。人们没有意识到，他们受到的监管其实非常宽松。  “别忘了，中国拥有一些世界上最优秀的企业家，因为他们毕",
+          "handle": "@interr_x",
+          "name": "拾习生.X",
+          "views": "13.5万",
+          "raw_views": 135100
         }
       ],
       "source_ids": [
-        "2118597316840132651",
-        "2118533801433608686"
+        "2118533801433608686",
+        "2118591793252147470"
       ],
       "source_indices": [
-        26,
-        33
+        33,
+        77
       ],
-      "searchUrl": "https://x.com/search?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E4%B8%8E%E9%BB%84%E4%BB%81%E5%8B%8B%E8%A2%AB%E5%9B%BD%E4%BC%9A%E7%9B%AF%E4%B8%8A&src=typed_query&f=live",
-      "rank": 5
+      "searchUrl": "https://x.com/search?q=%E9%BB%84%E4%BB%81%E5%8B%8B%E8%A2%AB%E5%9B%BD%E4%BC%9A%E4%BC%A0%E5%94%A4%E4%B8%8E%E6%B6%89%E5%8D%8E%E8%A8%80%E8%AE%BA&src=typed_query&f=live",
+      "rank": 8
     },
     {
-      "title": "半导体存储大跌中的多空操作",
-      "meta": "3 帖 · 3 人在说 · 36.7万曝光",
-      "median": "中位数 8.8万 曝光",
-      "views": "36.7万",
+      "title": "Claude与GPT产品争议",
+      "meta": "3 帖 · 3 人在说 · 34.7万曝光",
+      "median": "中位数 11.6万 曝光",
+      "views": "34.7万",
       "stats": {
         "posts": 3,
         "people": 3,
-        "total_views": 367216,
-        "median_views": 87850,
-        "total_likes": 931,
-        "max_rate": 8937
+        "total_views": 347459,
+        "median_views": 115644,
+        "total_likes": 1254,
+        "max_rate": 5592
       },
       "tags": [
-        "#半导体",
-        "#存储",
-        "#美光",
-        "#SOXL",
-        "#AI行情",
+        "#Claude",
+        "#ChatGPT",
+        "#订阅",
+        "#token",
         "#热点话题",
         "#X热帖",
         "#AI整理"
       ],
       "samples": [
         {
-          "id": "2118706189009891821",
-          "url": "https://x.com/thankucrypto/status/2118706189009891821",
-          "text": "看到的第一时间，做空美光。 https://t.co/asimocscyz",
-          "handle": "@thankucrypto",
-          "name": "allincrypto 熬鹰资本 🇨🇳",
-          "views": "20.0万",
-          "raw_views": 200421
+          "id": "2118640579651457265",
+          "url": "https://x.com/LanzhiAI/status/2118640579651457265",
+          "text": "前人疯狂白嫖退款，后人直接把路走绝。Claude 这波把门焊死，老实人全被误伤了！  最近 iOS 订阅 Claude 突然大面积暴雷，不管是养了几年的美区老 ",
+          "handle": "@LanzhiAI",
+          "name": "澜知 AI",
+          "views": "12.8万",
+          "raw_views": 128076
         },
         {
-          "id": "2118695995148320833",
-          "url": "https://x.com/iiiinvest/status/2118695995148320833",
-          "text": "再买回 3 万股半导体SOXL，比想象中强！ https://t.co/0tf6iLfJ27",
-          "handle": "@iiiinvest",
-          "name": "电鱼哥专注SpaceX",
-          "views": "8.8万",
-          "raw_views": 87850
+          "id": "2118662176290591137",
+          "url": "https://x.com/CyberKanjousen/status/2118662176290591137",
+          "text": "省流：黄油群主的大肥鱼自己修复了群里的黄油，还把修复后的黄油发群里。全过程一共烧了群主 15 亿 token🤯 https://t.co/huzNW4Y1yU",
+          "handle": "@CyberKanjousen",
+          "name": "サイバー環状線",
+          "views": "11.6万",
+          "raw_views": 115644
         },
         {
-          "id": "2118513147233624466",
-          "url": "https://x.com/WallStreet0Name/status/2118513147233624466",
-          "text": "不用怀疑这是真事，川沐的性格半导体和存储跌这么多，他回撤也会很大。 川沐去年底至今年上半年，从这波ai行情里拿到大结果的，这几次连续下跌全吐回去了。  主要原因",
-          "handle": "@WallStreet0Name",
-          "name": "华尔街没有名字",
-          "views": "7.9万",
-          "raw_views": 78945
+          "id": "2118526693866672529",
+          "url": "https://x.com/niumoney/status/2118526693866672529",
+          "text": "老天爷，天塌了，  tibo走人了，  GPT以后没有重置，  活不下去了啊！！！！",
+          "handle": "@niumoney",
+          "name": "牛宝富",
+          "views": "10.4万",
+          "raw_views": 103739
         }
       ],
       "source_ids": [
-        "2118706189009891821",
-        "2118695995148320833",
-        "2118513147233624466"
+        "2118640579651457265",
+        "2118662176290591137",
+        "2118526693866672529"
       ],
       "source_indices": [
-        46,
-        125,
-        149
+        80,
+        94,
+        104
       ],
-      "searchUrl": "https://x.com/search?q=%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%AD%98%E5%82%A8%E5%A4%A7%E8%B7%8C%E4%B8%AD%E7%9A%84%E5%A4%9A%E7%A9%BA%E6%93%8D%E4%BD%9C&src=typed_query&f=live",
-      "rank": 6
+      "searchUrl": "https://x.com/search?q=Claude%E4%B8%8EGPT%E4%BA%A7%E5%93%81%E4%BA%89%E8%AE%AE&src=typed_query&f=live",
+      "rank": 9
     },
     {
-      "title": "中美AI竞争与美国放缓AI压力",
+      "title": "中美AI竞争与放缓经济影响",
       "meta": "3 帖 · 3 人在说 · 34.5万曝光",
       "median": "中位数 9.6万 曝光",
       "views": "34.5万",
@@ -4216,11 +4397,10 @@
         "max_rate": 8025
       },
       "tags": [
-        "#中国AI",
-        "#中美",
+        "#中美AI",
         "#人工智能",
-        "#政策",
-        "#经济",
+        "#竞争",
+        "#经济压力",
         "#热点话题",
         "#X热帖",
         "#AI整理"
@@ -4264,116 +4444,61 @@
         111,
         145
       ],
-      "searchUrl": "https://x.com/search?q=%E4%B8%AD%E7%BE%8EAI%E7%AB%9E%E4%BA%89%E4%B8%8E%E7%BE%8E%E5%9B%BD%E6%94%BE%E7%BC%93AI%E5%8E%8B%E5%8A%9B&src=typed_query&f=live",
-      "rank": 7
+      "searchUrl": "https://x.com/search?q=%E4%B8%AD%E7%BE%8EAI%E7%AB%9E%E4%BA%89%E4%B8%8E%E6%94%BE%E7%BC%93%E7%BB%8F%E6%B5%8E%E5%BD%B1%E5%93%8D&src=typed_query&f=live",
+      "rank": 10
     },
     {
-      "title": "马斯克为何只调侃不回复CZ",
-      "meta": "2 帖 · 2 人在说 · 33.8万曝光",
-      "median": "中位数 16.9万 曝光",
-      "views": "33.8万",
-      "stats": {
-        "posts": 2,
-        "people": 2,
-        "total_views": 338072,
-        "median_views": 169036,
-        "total_likes": 637,
-        "max_rate": 2717
-      },
-      "tags": [
-        "#马斯克",
-        "#CZ",
-        "#币圈",
-        "#互动",
-        "#加密货币",
-        "#热点话题",
-        "#X热帖",
-        "#AI整理"
-      ],
-      "samples": [
-        {
-          "id": "2118608131140018537",
-          "url": "https://x.com/_FORAB/status/2118608131140018537",
-          "text": "为何马斯克最近老是调侃 CZ  而且还知道这张图片的梗 🤣  现在 X 上又多了一对组合 https://t.co/VxVbsAsnDn",
-          "handle": "@_FORAB",
-          "name": "AB Kuai.Dong",
-          "views": "17.1万",
-          "raw_views": 171189
-        },
-        {
-          "id": "2118626552644784598",
-          "url": "https://x.com/nftfafafa/status/2118626552644784598",
-          "text": "为什么Elon到处调侃CZ 又不直接回复CZ呢？  马斯克调侃CZ的推文，每个CZ都回复了，马斯克从来不回复CZ https://t.co/MrxjwFsQH7",
-          "handle": "@nftfafafa",
-          "name": "北讲区块链",
-          "views": "16.7万",
-          "raw_views": 166883
-        }
-      ],
-      "source_ids": [
-        "2118608131140018537",
-        "2118626552644784598"
-      ],
-      "source_indices": [
-        58,
-        60
-      ],
-      "searchUrl": "https://x.com/search?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E4%B8%BA%E4%BD%95%E5%8F%AA%E8%B0%83%E4%BE%83%E4%B8%8D%E5%9B%9E%E5%A4%8DCZ&src=typed_query&f=live",
-      "rank": 8
-    },
-    {
-      "title": "孙宇晨神预测与币圈深熊观察",
+      "title": "币安理财收益与招聘骗局频发",
       "meta": "2 帖 · 2 人在说 · 26.6万曝光",
       "median": "中位数 13.3万 曝光",
       "views": "26.6万",
       "stats": {
         "posts": 2,
         "people": 2,
-        "total_views": 266384,
-        "median_views": 133192,
-        "total_likes": 960,
-        "max_rate": 5357
+        "total_views": 266415,
+        "median_views": 133207.5,
+        "total_likes": 448,
+        "max_rate": 7592
       },
       "tags": [
-        "#孙宇晨",
-        "#币圈",
+        "#币安",
+        "#理财",
+        "#骗局",
         "#加密货币",
-        "#深熊",
-        "#市场预测",
         "#热点话题",
         "#X热帖",
         "#AI整理"
       ],
       "samples": [
         {
-          "id": "2118602416400818392",
-          "url": "https://x.com/CaptainLufei999/status/2118602416400818392",
-          "text": "不得不承认 “孙宇晨” 在判断未来趋势方面 确实是最牛逼。 和金晨的连麦说三件事： 1，说加密货币安全性，之后，bnb出事 2，说看美债不悲观，之后，美债价格上",
-          "handle": "@CaptainLufei999",
-          "name": "自己造船的路飞（装逼中）",
-          "views": "17.8万",
-          "raw_views": 177867
+          "id": "2118660472341958959",
+          "url": "https://x.com/Libaiwan168/status/2118660472341958959",
+          "text": "卧槽  200万现金放在支付宝里  你们猜怎么说  一天的余额宝收益只有50多块钱，  如果放在币安里有百分之10  一天有700多块钱，是支付宝的14.5倍 ",
+          "handle": "@Libaiwan168",
+          "name": "李百万",
+          "views": "18.4万",
+          "raw_views": 184306
         },
         {
-          "id": "2118692610638528706",
-          "url": "https://x.com/zengying1107/status/2118692610638528706",
-          "text": "看到孙哥随身携带晾衣架的粉丝路透照， 我很难过， 币圈果然进入了深熊。  大家都在关心他瘦没瘦， 只有我关心他， 到底还能不能穿得起日抛。😭 https://t",
-          "handle": "@zengying1107",
-          "name": "曾颖",
-          "views": "8.9万",
-          "raw_views": 88517
+          "id": "2118529826902696119",
+          "url": "https://x.com/brucexu_eth/status/2118529826902696119",
+          "text": "亲历币安同款招聘攻击，我识破骗局反骗黑客 1000U，最后却发现自己中了木马",
+          "handle": "@brucexu_eth",
+          "name": "brucexu.eth",
+          "views": "8.2万",
+          "raw_views": 82109
         }
       ],
       "source_ids": [
-        "2118602416400818392",
-        "2118692610638528706"
+        "2118660472341958959",
+        "2118529826902696119"
       ],
       "source_indices": [
-        53,
-        124
+        50,
+        139
       ],
-      "searchUrl": "https://x.com/search?q=%E5%AD%99%E5%AE%87%E6%99%A8%E7%A5%9E%E9%A2%84%E6%B5%8B%E4%B8%8E%E5%B8%81%E5%9C%88%E6%B7%B1%E7%86%8A%E8%A7%82%E5%AF%9F&src=typed_query&f=live",
-      "rank": 9
+      "searchUrl": "https://x.com/search?q=%E5%B8%81%E5%AE%89%E7%90%86%E8%B4%A2%E6%94%B6%E7%9B%8A%E4%B8%8E%E6%8B%9B%E8%81%98%E9%AA%97%E5%B1%80%E9%A2%91%E5%8F%91&src=typed_query&f=live",
+      "rank": 11
     },
     {
       "title": "Grok Bot开源与第二大脑玩法",
@@ -4390,10 +4515,9 @@
       },
       "tags": [
         "#Grok",
-        "#马斯克",
         "#开源",
-        "#AI工具",
         "#Obsidian",
+        "#AI工具",
         "#热点话题",
         "#X热帖",
         "#AI整理"
@@ -4427,64 +4551,63 @@
         147
       ],
       "searchUrl": "https://x.com/search?q=Grok%20Bot%E5%BC%80%E6%BA%90%E4%B8%8E%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%84%91%E7%8E%A9%E6%B3%95&src=typed_query&f=live",
-      "rank": 10
+      "rank": 12
     },
     {
-      "title": "外籍AI高管的中国卷文化往事",
-      "meta": "2 帖 · 2 人在说 · 23.1万曝光",
-      "median": "中位数 11.5万 曝光",
-      "views": "23.1万",
+      "title": "副业赚钱与信息差求助扎堆",
+      "meta": "2 帖 · 2 人在说 · 24.1万曝光",
+      "median": "中位数 12.0万 曝光",
+      "views": "24.1万",
       "stats": {
         "posts": 2,
         "people": 2,
-        "total_views": 230911,
-        "median_views": 115455.5,
-        "total_likes": 743,
-        "max_rate": 13947
+        "total_views": 240692,
+        "median_views": 120346,
+        "total_likes": 149,
+        "max_rate": 0
       },
       "tags": [
-        "#黄仁勋",
-        "#Dario",
-        "#百度",
-        "#中国AI",
-        "#加班",
+        "#副业",
+        "#赚钱",
+        "#信息差",
+        "#失业",
         "#热点话题",
         "#X热帖",
         "#AI整理"
       ],
       "samples": [
         {
-          "id": "2118591793252147470",
-          "url": "https://x.com/interr_x/status/2118591793252147470",
-          "text": "黄仁勋：996是他们的文化，他们是世界上最有干劲的一群人。人们没有意识到，他们受到的监管其实非常宽松。  “别忘了，中国拥有一些世界上最优秀的企业家，因为他们毕",
-          "handle": "@interr_x",
-          "name": "拾习生.X",
-          "views": "13.5万",
-          "raw_views": 135100
+          "id": "2118537669169103268",
+          "url": "https://x.com/mariregina55109/status/2118537669169103268",
+          "text": "在国内，有什么信息差，普通人18-35岁这个年纪可以尝试做什么来实现月入 1～2w的，最好是不需要垫资囤货，空手套白狼的，多劳多得的，大家有什么分享。",
+          "handle": "@mariregina55109",
+          "name": "Ning",
+          "views": "16.0万",
+          "raw_views": 160461
         },
         {
-          "id": "2118705039988674675",
-          "url": "https://x.com/Vincent_AINotes/status/2118705039988674675",
-          "text": "谁能想到，现在 Anthropic 的 CEO Dario，当年在百度也是个通宵干活的卷王 😂  2014 年，他加入百度在硅谷的 AI 实验室，跟着吴恩达搞研",
-          "handle": "@Vincent_AINotes",
-          "name": "Vincent",
-          "views": "9.6万",
-          "raw_views": 95811
+          "id": "2118567874885468202",
+          "url": "https://x.com/wujizhuzhu/status/2118567874885468202",
+          "text": "兄弟们  在国内有没有什么副业可以在家干  只要月入5w以上就可以  失业快两年了，顶不住了🥹🥹🥹",
+          "handle": "@wujizhuzhu",
+          "name": "朱无忌无忌",
+          "views": "8.0万",
+          "raw_views": 80231
         }
       ],
       "source_ids": [
-        "2118591793252147470",
-        "2118705039988674675"
+        "2118537669169103268",
+        "2118567874885468202"
       ],
       "source_indices": [
-        77,
-        112
+        63,
+        144
       ],
-      "searchUrl": "https://x.com/search?q=%E5%A4%96%E7%B1%8DAI%E9%AB%98%E7%AE%A1%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%8D%B7%E6%96%87%E5%8C%96%E5%BE%80%E4%BA%8B&src=typed_query&f=live",
-      "rank": 11
+      "searchUrl": "https://x.com/search?q=%E5%89%AF%E4%B8%9A%E8%B5%9A%E9%92%B1%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%B7%AE%E6%B1%82%E5%8A%A9%E6%89%8E%E5%A0%86&src=typed_query&f=live",
+      "rank": 13
     },
     {
-      "title": "大多数人用AI工具的方式错了",
+      "title": "ChatGPT与Gemini使用方式争议",
       "meta": "2 帖 · 2 人在说 · 20.5万曝光",
       "median": "中位数 10.3万 曝光",
       "views": "20.5万",
@@ -4498,10 +4621,9 @@
       },
       "tags": [
         "#ChatGPT",
-        "#AI工具",
+        "#Gemini",
         "#提示词",
-        "#使用技巧",
-        "#Claude",
+        "#AI使用",
         "#热点话题",
         "#X热帖",
         "#AI整理"
@@ -4534,8 +4656,8 @@
         86,
         134
       ],
-      "searchUrl": "https://x.com/search?q=%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E7%94%A8AI%E5%B7%A5%E5%85%B7%E7%9A%84%E6%96%B9%E5%BC%8F%E9%94%99%E4%BA%86&src=typed_query&f=live",
-      "rank": 12
+      "searchUrl": "https://x.com/search?q=ChatGPT%E4%B8%8EGemini%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F%E4%BA%89%E8%AE%AE&src=typed_query&f=live",
+      "rank": 14
     },
     {
       "title": "底特律知名夜总会大亨艾伦·马科维茨，在得知结婚多年的妻子背着",
@@ -4572,7 +4694,7 @@
         1
       ],
       "searchUrl": "https://x.com/search?q=%E5%BA%95%E7%89%B9%E5%BE%8B%E7%9F%A5%E5%90%8D%E5%A4%9C%E6%80%BB%E4%BC%9A%E5%A4%A7%E4%BA%A8%E8%89%BE%E4%BC%A6%C2%B7%E9%A9%AC%E7%A7%91%E7%BB%B4%E8%8C%A8%EF%BC%8C%E5%9C%A8%E5%BE%97%E7%9F%A5%E7%BB%93%E5%A9%9A%E5%A4%9A%E5%B9%B4%E7%9A%84%E5%A6%BB%E5%AD%90%E8%83%8C%E7%9D%80&src=typed_query&f=live",
-      "rank": 13
+      "rank": 15
     },
     {
       "title": "我cos的像吗",
@@ -4609,7 +4731,7 @@
         2
       ],
       "searchUrl": "https://x.com/search?q=%E6%88%91cos%E7%9A%84%E5%83%8F%E5%90%97&src=typed_query&f=live",
-      "rank": 14
+      "rank": 16
     },
     {
       "title": "现在很多直播公司招女主播就是这样的",
@@ -4646,7 +4768,7 @@
         3
       ],
       "searchUrl": "https://x.com/search?q=%E7%8E%B0%E5%9C%A8%E5%BE%88%E5%A4%9A%E7%9B%B4%E6%92%AD%E5%85%AC%E5%8F%B8%E6%8B%9B%E5%A5%B3%E4%B8%BB%E6%92%AD%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7%E7%9A%84&src=typed_query&f=live",
-      "rank": 15
+      "rank": 17
     },
     {
       "title": "一战期间，有一名士兵突然跑到修女面前 “拜托让我躲在你的裙子",
@@ -4683,7 +4805,7 @@
         4
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%80%E6%88%98%E6%9C%9F%E9%97%B4%EF%BC%8C%E6%9C%89%E4%B8%80%E5%90%8D%E5%A3%AB%E5%85%B5%E7%AA%81%E7%84%B6%E8%B7%91%E5%88%B0%E4%BF%AE%E5%A5%B3%E9%9D%A2%E5%89%8D%20%E2%80%9C%E6%8B%9C%E6%89%98%E8%AE%A9%E6%88%91%E8%BA%B2%E5%9C%A8%E4%BD%A0%E7%9A%84%E8%A3%99%E5%AD%90&src=typed_query&f=live",
-      "rank": 16
+      "rank": 18
     },
     {
       "title": "电商平台的违禁词，就是另一种形态的文字狱",
@@ -4720,7 +4842,7 @@
         5
       ],
       "searchUrl": "https://x.com/search?q=%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%BF%9D%E7%A6%81%E8%AF%8D%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E6%80%81%E7%9A%84%E6%96%87%E5%AD%97%E7%8B%B1&src=typed_query&f=live",
-      "rank": 17
+      "rank": 19
     },
     {
       "title": "火山哥🕊️发布热门内容",
@@ -4757,7 +4879,7 @@
         6
       ],
       "searchUrl": "https://x.com/search?q=%E7%81%AB%E5%B1%B1%E5%93%A5%F0%9F%95%8A%EF%B8%8F%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 18
+      "rank": 20
     },
     {
       "title": "这样的好领导不多了",
@@ -4794,7 +4916,7 @@
         7
       ],
       "searchUrl": "https://x.com/search?q=%E8%BF%99%E6%A0%B7%E7%9A%84%E5%A5%BD%E9%A2%86%E5%AF%BC%E4%B8%8D%E5%A4%9A%E4%BA%86&src=typed_query&f=live",
-      "rank": 19
+      "rank": 21
     },
     {
       "title": "花了5k值吗",
@@ -4831,7 +4953,7 @@
         8
       ],
       "searchUrl": "https://x.com/search?q=%E8%8A%B1%E4%BA%865k%E5%80%BC%E5%90%97&src=typed_query&f=live",
-      "rank": 20
+      "rank": 22
     },
     {
       "title": "“等妈来”“妈来了就不会有事了”",
@@ -4868,7 +4990,7 @@
         9
       ],
       "searchUrl": "https://x.com/search?q=%E2%80%9C%E7%AD%89%E5%A6%88%E6%9D%A5%E2%80%9D%E2%80%9C%E5%A6%88%E6%9D%A5%E4%BA%86%E5%B0%B1%E4%B8%8D%E4%BC%9A%E6%9C%89%E4%BA%8B%E4%BA%86%E2%80%9D&src=typed_query&f=live",
-      "rank": 21
+      "rank": 23
     },
     {
       "title": "我很好奇 抖音服务器带宽有多大才能供上亿人同时刷抖音",
@@ -4905,7 +5027,7 @@
         10
       ],
       "searchUrl": "https://x.com/search?q=%E6%88%91%E5%BE%88%E5%A5%BD%E5%A5%87%20%E6%8A%96%E9%9F%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%A6%E5%AE%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E6%89%8D%E8%83%BD%E4%BE%9B%E4%B8%8A%E4%BA%BF%E4%BA%BA%E5%90%8C%E6%97%B6%E5%88%B7%E6%8A%96%E9%9F%B3&src=typed_query&f=live",
-      "rank": 22
+      "rank": 24
     },
     {
       "title": "本来没笑，工作人员一上台那是真的没绷住 😂😂",
@@ -4942,7 +5064,7 @@
         11
       ],
       "searchUrl": "https://x.com/search?q=%E6%9C%AC%E6%9D%A5%E6%B2%A1%E7%AC%91%EF%BC%8C%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%E4%B8%80%E4%B8%8A%E5%8F%B0%E9%82%A3%E6%98%AF%E7%9C%9F%E7%9A%84%E6%B2%A1%E7%BB%B7%E4%BD%8F%20%F0%9F%98%82%F0%9F%98%82&src=typed_query&f=live",
-      "rank": 23
+      "rank": 25
     },
     {
       "title": "郑爽在 INS 每天更新动态的同时，居然还有很多粉丝担心她钱",
@@ -4979,7 +5101,7 @@
         13
       ],
       "searchUrl": "https://x.com/search?q=%E9%83%91%E7%88%BD%E5%9C%A8%20INS%20%E6%AF%8F%E5%A4%A9%E6%9B%B4%E6%96%B0%E5%8A%A8%E6%80%81%E7%9A%84%E5%90%8C%E6%97%B6%EF%BC%8C%E5%B1%85%E7%84%B6%E8%BF%98%E6%9C%89%E5%BE%88%E5%A4%9A%E7%B2%89%E4%B8%9D%E6%8B%85%E5%BF%83%E5%A5%B9%E9%92%B1&src=typed_query&f=live",
-      "rank": 24
+      "rank": 26
     },
     {
       "title": "你知道乳晕周围那一圈凸起的颗粒是干嘛用的吗",
@@ -5016,7 +5138,7 @@
         14
       ],
       "searchUrl": "https://x.com/search?q=%E4%BD%A0%E7%9F%A5%E9%81%93%E4%B9%B3%E6%99%95%E5%91%A8%E5%9B%B4%E9%82%A3%E4%B8%80%E5%9C%88%E5%87%B8%E8%B5%B7%E7%9A%84%E9%A2%97%E7%B2%92%E6%98%AF%E5%B9%B2%E5%98%9B%E7%94%A8%E7%9A%84%E5%90%97&src=typed_query&f=live",
-      "rank": 25
+      "rank": 27
     },
     {
       "title": "时代的眼泪",
@@ -5053,7 +5175,7 @@
         15
       ],
       "searchUrl": "https://x.com/search?q=%E6%97%B6%E4%BB%A3%E7%9A%84%E7%9C%BC%E6%B3%AA&src=typed_query&f=live",
-      "rank": 26
+      "rank": 28
     },
     {
       "title": "历史的镜像：从大明织造局的严党与清流之争 到硅谷 PACs",
@@ -5090,7 +5212,7 @@
         16
       ],
       "searchUrl": "https://x.com/search?q=%E5%8E%86%E5%8F%B2%E7%9A%84%E9%95%9C%E5%83%8F%EF%BC%9A%E4%BB%8E%E5%A4%A7%E6%98%8E%E7%BB%87%E9%80%A0%E5%B1%80%E7%9A%84%E4%B8%A5%E5%85%9A%E4%B8%8E%E6%B8%85%E6%B5%81%E4%B9%8B%E4%BA%89%20%E5%88%B0%E7%A1%85%E8%B0%B7%20PACs&src=typed_query&f=live",
-      "rank": 27
+      "rank": 29
     },
     {
       "title": "舞台已经给Deepseek准备好了 接下来就看梁圣的了",
@@ -5128,7 +5250,7 @@
         17
       ],
       "searchUrl": "https://x.com/search?q=%E8%88%9E%E5%8F%B0%E5%B7%B2%E7%BB%8F%E7%BB%99Deepseek%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86%20%E6%8E%A5%E4%B8%8B%E6%9D%A5%E5%B0%B1%E7%9C%8B%E6%A2%81%E5%9C%A3%E7%9A%84%E4%BA%86&src=typed_query&f=live",
-      "rank": 28
+      "rank": 30
     },
     {
       "title": "当年红遍亚洲的5位日本AV成人女星，引退之后境遇天差地别，现",
@@ -5165,7 +5287,7 @@
         18
       ],
       "searchUrl": "https://x.com/search?q=%E5%BD%93%E5%B9%B4%E7%BA%A2%E9%81%8D%E4%BA%9A%E6%B4%B2%E7%9A%845%E4%BD%8D%E6%97%A5%E6%9C%ACAV%E6%88%90%E4%BA%BA%E5%A5%B3%E6%98%9F%EF%BC%8C%E5%BC%95%E9%80%80%E4%B9%8B%E5%90%8E%E5%A2%83%E9%81%87%E5%A4%A9%E5%B7%AE%E5%9C%B0%E5%88%AB%EF%BC%8C%E7%8E%B0&src=typed_query&f=live",
-      "rank": 29
+      "rank": 31
     },
     {
       "title": "坐公交看见了这一幕",
@@ -5202,7 +5324,7 @@
         21
       ],
       "searchUrl": "https://x.com/search?q=%E5%9D%90%E5%85%AC%E4%BA%A4%E7%9C%8B%E8%A7%81%E4%BA%86%E8%BF%99%E4%B8%80%E5%B9%95&src=typed_query&f=live",
-      "rank": 30
+      "rank": 32
     },
     {
       "title": "当路边擦皮鞋的儿童都开始谈论股票、购买股票，那就是非常危险的",
@@ -5240,7 +5362,7 @@
         22
       ],
       "searchUrl": "https://x.com/search?q=%E5%BD%93%E8%B7%AF%E8%BE%B9%E6%93%A6%E7%9A%AE%E9%9E%8B%E7%9A%84%E5%84%BF%E7%AB%A5%E9%83%BD%E5%BC%80%E5%A7%8B%E8%B0%88%E8%AE%BA%E8%82%A1%E7%A5%A8%E3%80%81%E8%B4%AD%E4%B9%B0%E8%82%A1%E7%A5%A8%EF%BC%8C%E9%82%A3%E5%B0%B1%E6%98%AF%E9%9D%9E%E5%B8%B8%E5%8D%B1%E9%99%A9%E7%9A%84&src=typed_query&f=live",
-      "rank": 31
+      "rank": 33
     },
     {
       "title": "五年前的今天，马斯克因为被骂不交税，在推特上发起投票，问网友",
@@ -5278,7 +5400,7 @@
         23
       ],
       "searchUrl": "https://x.com/search?q=%E4%BA%94%E5%B9%B4%E5%89%8D%E7%9A%84%E4%BB%8A%E5%A4%A9%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E5%9B%A0%E4%B8%BA%E8%A2%AB%E9%AA%82%E4%B8%8D%E4%BA%A4%E7%A8%8E%EF%BC%8C%E5%9C%A8%E6%8E%A8%E7%89%B9%E4%B8%8A%E5%8F%91%E8%B5%B7%E6%8A%95%E7%A5%A8%EF%BC%8C%E9%97%AE%E7%BD%91%E5%8F%8B&src=typed_query&f=live",
-      "rank": 32
+      "rank": 34
     },
     {
       "title": "婚礼现场问新郎肯不肯为她贪污😱结果被扇巴掌退婚😃 真是让人前",
@@ -5315,7 +5437,7 @@
         24
       ],
       "searchUrl": "https://x.com/search?q=%E5%A9%9A%E7%A4%BC%E7%8E%B0%E5%9C%BA%E9%97%AE%E6%96%B0%E9%83%8E%E8%82%AF%E4%B8%8D%E8%82%AF%E4%B8%BA%E5%A5%B9%E8%B4%AA%E6%B1%A1%F0%9F%98%B1%E7%BB%93%E6%9E%9C%E8%A2%AB%E6%89%87%E5%B7%B4%E6%8E%8C%E9%80%80%E5%A9%9A%F0%9F%98%83%20%E7%9C%9F%E6%98%AF%E8%AE%A9%E4%BA%BA%E5%89%8D&src=typed_query&f=live",
-      "rank": 33
+      "rank": 35
     },
     {
       "title": "特朗普：“你想说点什么吗",
@@ -5352,7 +5474,7 @@
         25
       ],
       "searchUrl": "https://x.com/search?q=%E7%89%B9%E6%9C%97%E6%99%AE%EF%BC%9A%E2%80%9C%E4%BD%A0%E6%83%B3%E8%AF%B4%E7%82%B9%E4%BB%80%E4%B9%88%E5%90%97&src=typed_query&f=live",
-      "rank": 34
+      "rank": 36
     },
     {
       "title": "中国人：把东西烧给祖宗 欧洲人：烧女巫 欧洲人祖宗：哎哟我操",
@@ -5389,7 +5511,7 @@
         27
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%AD%E5%9B%BD%E4%BA%BA%EF%BC%9A%E6%8A%8A%E4%B8%9C%E8%A5%BF%E7%83%A7%E7%BB%99%E7%A5%96%E5%AE%97%20%E6%AC%A7%E6%B4%B2%E4%BA%BA%EF%BC%9A%E7%83%A7%E5%A5%B3%E5%B7%AB%20%E6%AC%A7%E6%B4%B2%E4%BA%BA%E7%A5%96%E5%AE%97%EF%BC%9A%E5%93%8E%E5%93%9F%E6%88%91%E6%93%8D&src=typed_query&f=live",
-      "rank": 35
+      "rank": 37
     },
     {
       "title": "他表达的是啥意思",
@@ -5426,7 +5548,7 @@
         28
       ],
       "searchUrl": "https://x.com/search?q=%E4%BB%96%E8%A1%A8%E8%BE%BE%E7%9A%84%E6%98%AF%E5%95%A5%E6%84%8F%E6%80%9D&src=typed_query&f=live",
-      "rank": 36
+      "rank": 38
     },
     {
       "title": "艺术源于生活",
@@ -5463,80 +5585,6 @@
         29
       ],
       "searchUrl": "https://x.com/search?q=%E8%89%BA%E6%9C%AF%E6%BA%90%E4%BA%8E%E7%94%9F%E6%B4%BB&src=typed_query&f=live",
-      "rank": 37
-    },
-    {
-      "title": "不要再给我推情侣出轨那个瓜了 不是男女对立但没见过有男的出轨",
-      "meta": "1 帖 · 1 人在说 · 26.3万曝光",
-      "median": "中位数 26.3万 曝光",
-      "views": "26.3万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 263095,
-        "median_views": 263095,
-        "total_likes": 4283,
-        "max_rate": 15034
-      },
-      "tags": [
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118606080729387052",
-          "url": "https://x.com/xiaoyumama9968/status/2118606080729387052",
-          "text": "不要再给我推情侣出轨那个瓜了 不是男女对立但没见过有男的出轨可以在互联网上发酵这么大的……",
-          "handle": "@xiaoyumama9968",
-          "name": "小宇妈妈",
-          "views": "26.3万",
-          "raw_views": 263095
-        }
-      ],
-      "source_ids": [
-        "2118606080729387052"
-      ],
-      "source_indices": [
-        30
-      ],
-      "searchUrl": "https://x.com/search?q=%E4%B8%8D%E8%A6%81%E5%86%8D%E7%BB%99%E6%88%91%E6%8E%A8%E6%83%85%E4%BE%A3%E5%87%BA%E8%BD%A8%E9%82%A3%E4%B8%AA%E7%93%9C%E4%BA%86%20%E4%B8%8D%E6%98%AF%E7%94%B7%E5%A5%B3%E5%AF%B9%E7%AB%8B%E4%BD%86%E6%B2%A1%E8%A7%81%E8%BF%87%E6%9C%89%E7%94%B7%E7%9A%84%E5%87%BA%E8%BD%A8&src=typed_query&f=live",
-      "rank": 38
-    },
-    {
-      "title": "天呐，马斯克密友重磅爆料",
-      "meta": "1 帖 · 1 人在说 · 25.9万曝光",
-      "median": "中位数 25.9万 曝光",
-      "views": "25.9万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 259086,
-        "median_views": 259086,
-        "total_likes": 2284,
-        "max_rate": 17400
-      },
-      "tags": [
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118679727892230465",
-          "url": "https://x.com/AYi_AInotes/status/2118679727892230465",
-          "text": "天呐，马斯克密友重磅爆料！哪怕马斯克坐拥数千亿美元财富、手握火箭卫星，私底下却每天生活在难以想象的极端危险里。  认识了二十年的老朋友，在电视镜头前聊起全球首富",
-          "handle": "@AYi_AInotes",
-          "name": "AYi",
-          "views": "25.9万",
-          "raw_views": 259086
-        }
-      ],
-      "source_ids": [
-        "2118679727892230465"
-      ],
-      "source_indices": [
-        31
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%A4%A9%E5%91%90%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E5%AF%86%E5%8F%8B%E9%87%8D%E7%A3%85%E7%88%86%E6%96%99&src=typed_query&f=live",
       "rank": 39
     },
     {
@@ -5762,43 +5810,6 @@
       "rank": 45
     },
     {
-      "title": "這宗事件是近日香港 Threads 上瘋傳的「網紅出軌」爆料",
-      "meta": "1 帖 · 1 人在说 · 22.3万曝光",
-      "median": "中位数 22.3万 曝光",
-      "views": "22.3万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 223042,
-        "median_views": 223042,
-        "total_likes": 1298,
-        "max_rate": 7495
-      },
-      "tags": [
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118579832682606613",
-          "url": "https://x.com/creamyhaoscar/status/2118579832682606613",
-          "text": "這宗事件是近日香港 Threads 上瘋傳的「網紅出軌」爆料，核心是男友在拍拖3週年紀念日於海旁「假驚喜、真攤牌」的對質影片。​  事件經過： 男事主與女網紅交",
-          "handle": "@creamyhaoscar",
-          "name": "OscarChan🧡Sign",
-          "views": "22.3万",
-          "raw_views": 223042
-        }
-      ],
-      "source_ids": [
-        "2118579832682606613"
-      ],
-      "source_indices": [
-        40
-      ],
-      "searchUrl": "https://x.com/search?q=%E9%80%99%E5%AE%97%E4%BA%8B%E4%BB%B6%E6%98%AF%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%20Threads%20%E4%B8%8A%E7%98%8B%E5%82%B3%E7%9A%84%E3%80%8C%E7%B6%B2%E7%B4%85%E5%87%BA%E8%BB%8C%E3%80%8D%E7%88%86%E6%96%99&src=typed_query&f=live",
-      "rank": 46
-    },
-    {
       "title": "想象一下我是你的大学同学，每天上课就在那玩手机，什么活动也不",
       "meta": "1 帖 · 1 人在说 · 21.7万曝光",
       "median": "中位数 21.7万 曝光",
@@ -5833,7 +5844,7 @@
         41
       ],
       "searchUrl": "https://x.com/search?q=%E6%83%B3%E8%B1%A1%E4%B8%80%E4%B8%8B%E6%88%91%E6%98%AF%E4%BD%A0%E7%9A%84%E5%A4%A7%E5%AD%A6%E5%90%8C%E5%AD%A6%EF%BC%8C%E6%AF%8F%E5%A4%A9%E4%B8%8A%E8%AF%BE%E5%B0%B1%E5%9C%A8%E9%82%A3%E7%8E%A9%E6%89%8B%E6%9C%BA%EF%BC%8C%E4%BB%80%E4%B9%88%E6%B4%BB%E5%8A%A8%E4%B9%9F%E4%B8%8D&src=typed_query&f=live",
-      "rank": 47
+      "rank": 46
     },
     {
       "title": "才知道胭脂是一种虫",
@@ -5870,7 +5881,7 @@
         42
       ],
       "searchUrl": "https://x.com/search?q=%E6%89%8D%E7%9F%A5%E9%81%93%E8%83%AD%E8%84%82%E6%98%AF%E4%B8%80%E7%A7%8D%E8%99%AB&src=typed_query&f=live",
-      "rank": 48
+      "rank": 47
     },
     {
       "title": "赚钱不是为了炫耀，而是为了远离蠢货，以便更好的独处",
@@ -5907,7 +5918,7 @@
         43
       ],
       "searchUrl": "https://x.com/search?q=%E8%B5%9A%E9%92%B1%E4%B8%8D%E6%98%AF%E4%B8%BA%E4%BA%86%E7%82%AB%E8%80%80%EF%BC%8C%E8%80%8C%E6%98%AF%E4%B8%BA%E4%BA%86%E8%BF%9C%E7%A6%BB%E8%A0%A2%E8%B4%A7%EF%BC%8C%E4%BB%A5%E4%BE%BF%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%8B%AC%E5%A4%84&src=typed_query&f=live",
-      "rank": 49
+      "rank": 48
     },
     {
       "title": "选了个伊朗议员 太有节目效果了，这下有好戏看了",
@@ -5944,45 +5955,7 @@
         44
       ],
       "searchUrl": "https://x.com/search?q=%E9%80%89%E4%BA%86%E4%B8%AA%E4%BC%8A%E6%9C%97%E8%AE%AE%E5%91%98%20%E5%A4%AA%E6%9C%89%E8%8A%82%E7%9B%AE%E6%95%88%E6%9E%9C%E4%BA%86%EF%BC%8C%E8%BF%99%E4%B8%8B%E6%9C%89%E5%A5%BD%E6%88%8F%E7%9C%8B%E4%BA%86&src=typed_query&f=live",
-      "rank": 50
-    },
-    {
-      "title": "如果你今天没跌超过5% 那我不要和你说话",
-      "meta": "1 帖 · 1 人在说 · 20.3万曝光",
-      "median": "中位数 20.3万 曝光",
-      "views": "20.3万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 203031,
-        "median_views": 203031,
-        "total_likes": 863,
-        "max_rate": 6893
-      },
-      "tags": [
-        "#finance",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118511944747606401",
-          "url": "https://x.com/alanshao111/status/2118511944747606401",
-          "text": "如果你今天没跌超过5%  那我不要和你说话",
-          "handle": "@alanshao111",
-          "name": "邵艾伦Alan（薄肌版）",
-          "views": "20.3万",
-          "raw_views": 203031
-        }
-      ],
-      "source_ids": [
-        "2118511944747606401"
-      ],
-      "source_indices": [
-        45
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%BB%8A%E5%A4%A9%E6%B2%A1%E8%B7%8C%E8%B6%85%E8%BF%875%25%20%E9%82%A3%E6%88%91%E4%B8%8D%E8%A6%81%E5%92%8C%E4%BD%A0%E8%AF%B4%E8%AF%9D&src=typed_query&f=live",
-      "rank": 51
+      "rank": 49
     },
     {
       "title": "小麦搞钱计划发布热门内容",
@@ -6019,7 +5992,7 @@
         47
       ],
       "searchUrl": "https://x.com/search?q=%E5%B0%8F%E9%BA%A6%E6%90%9E%E9%92%B1%E8%AE%A1%E5%88%92%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 52
+      "rank": 50
     },
     {
       "title": "งานแต่งวันนั้น เจ้าบ่าวบอกให้เ",
@@ -6056,7 +6029,7 @@
         48
       ],
       "searchUrl": "https://x.com/search?q=%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80&src=typed_query&f=live",
-      "rank": 53
+      "rank": 51
     },
     {
       "title": "我是中国人",
@@ -6093,45 +6066,7 @@
         49
       ],
       "searchUrl": "https://x.com/search?q=%E6%88%91%E6%98%AF%E4%B8%AD%E5%9B%BD%E4%BA%BA&src=typed_query&f=live",
-      "rank": 54
-    },
-    {
-      "title": "卧槽 200万现金放在支付宝里 你们猜怎么说 一天的余额宝收",
-      "meta": "1 帖 · 1 人在说 · 18.4万曝光",
-      "median": "中位数 18.4万 曝光",
-      "views": "18.4万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 184306,
-        "median_views": 184306,
-        "total_likes": 193,
-        "max_rate": 7592
-      },
-      "tags": [
-        "#finance",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118660472341958959",
-          "url": "https://x.com/Libaiwan168/status/2118660472341958959",
-          "text": "卧槽  200万现金放在支付宝里  你们猜怎么说  一天的余额宝收益只有50多块钱，  如果放在币安里有百分之10  一天有700多块钱，是支付宝的14.5倍 ",
-          "handle": "@Libaiwan168",
-          "name": "李百万",
-          "views": "18.4万",
-          "raw_views": 184306
-        }
-      ],
-      "source_ids": [
-        "2118660472341958959"
-      ],
-      "source_indices": [
-        50
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%8D%A7%E6%A7%BD%20200%E4%B8%87%E7%8E%B0%E9%87%91%E6%94%BE%E5%9C%A8%E6%94%AF%E4%BB%98%E5%AE%9D%E9%87%8C%20%E4%BD%A0%E4%BB%AC%E7%8C%9C%E6%80%8E%E4%B9%88%E8%AF%B4%20%E4%B8%80%E5%A4%A9%E7%9A%84%E4%BD%99%E9%A2%9D%E5%AE%9D%E6%94%B6&src=typed_query&f=live",
-      "rank": 55
+      "rank": 52
     },
     {
       "title": "和我们当年上学一样，告密者在哪都不会受到尊重",
@@ -6168,7 +6103,7 @@
         51
       ],
       "searchUrl": "https://x.com/search?q=%E5%92%8C%E6%88%91%E4%BB%AC%E5%BD%93%E5%B9%B4%E4%B8%8A%E5%AD%A6%E4%B8%80%E6%A0%B7%EF%BC%8C%E5%91%8A%E5%AF%86%E8%80%85%E5%9C%A8%E5%93%AA%E9%83%BD%E4%B8%8D%E4%BC%9A%E5%8F%97%E5%88%B0%E5%B0%8A%E9%87%8D&src=typed_query&f=live",
-      "rank": 56
+      "rank": 53
     },
     {
       "title": "年轻高收入大佬的一些底层共性",
@@ -6206,7 +6141,7 @@
         52
       ],
       "searchUrl": "https://x.com/search?q=%E5%B9%B4%E8%BD%BB%E9%AB%98%E6%94%B6%E5%85%A5%E5%A4%A7%E4%BD%AC%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BA%95%E5%B1%82%E5%85%B1%E6%80%A7&src=typed_query&f=live",
-      "rank": 57
+      "rank": 54
     },
     {
       "title": "不涉及自己的利益的时候，风凉话随便讲",
@@ -6243,7 +6178,7 @@
         54
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%8D%E6%B6%89%E5%8F%8A%E8%87%AA%E5%B7%B1%E7%9A%84%E5%88%A9%E7%9B%8A%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E9%A3%8E%E5%87%89%E8%AF%9D%E9%9A%8F%E4%BE%BF%E8%AE%B2&src=typed_query&f=live",
-      "rank": 58
+      "rank": 55
     },
     {
       "title": "南知意发布热门内容",
@@ -6280,7 +6215,7 @@
         55
       ],
       "searchUrl": "https://x.com/search?q=%E5%8D%97%E7%9F%A5%E6%84%8F%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 59
+      "rank": 56
     },
     {
       "title": "🚨 Trump：“如果你们认为政府的第一职责是保护美国公民，",
@@ -6317,7 +6252,7 @@
         56
       ],
       "searchUrl": "https://x.com/search?q=%F0%9F%9A%A8%20Trump%EF%BC%9A%E2%80%9C%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%BB%AC%E8%AE%A4%E4%B8%BA%E6%94%BF%E5%BA%9C%E7%9A%84%E7%AC%AC%E4%B8%80%E8%81%8C%E8%B4%A3%E6%98%AF%E4%BF%9D%E6%8A%A4%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%EF%BC%8C&src=typed_query&f=live",
-      "rank": 60
+      "rank": 57
     },
     {
       "title": "山西一名装修工，支付宝夜里多进了1.98万元",
@@ -6354,82 +6289,7 @@
         61
       ],
       "searchUrl": "https://x.com/search?q=%E5%B1%B1%E8%A5%BF%E4%B8%80%E5%90%8D%E8%A3%85%E4%BF%AE%E5%B7%A5%EF%BC%8C%E6%94%AF%E4%BB%98%E5%AE%9D%E5%A4%9C%E9%87%8C%E5%A4%9A%E8%BF%9B%E4%BA%861.98%E4%B8%87%E5%85%83&src=typed_query&f=live",
-      "rank": 61
-    },
-    {
-      "title": "川普中期选举输了，民主党参议员 Jon Ossoff 火了",
-      "meta": "1 帖 · 1 人在说 · 16.3万曝光",
-      "median": "中位数 16.3万 曝光",
-      "views": "16.3万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 162634,
-        "median_views": 162634,
-        "total_likes": 1239,
-        "max_rate": 0
-      },
-      "tags": [
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118629269043831184",
-          "url": "https://x.com/kylewmi/status/2118629269043831184",
-          "text": "川普中期选举输了，民主党参议员 Jon Ossoff 火了。  39 岁的青年才俊，口才出色。在佐治亚州以 59% 对 41% 大胜特朗普力挺的共和党人 Mik",
-          "handle": "@kylewmi",
-          "name": "Kyle_13 (烹饪版)👨‍🍳",
-          "views": "16.3万",
-          "raw_views": 162634
-        }
-      ],
-      "source_ids": [
-        "2118629269043831184"
-      ],
-      "source_indices": [
-        62
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%B7%9D%E6%99%AE%E4%B8%AD%E6%9C%9F%E9%80%89%E4%B8%BE%E8%BE%93%E4%BA%86%EF%BC%8C%E6%B0%91%E4%B8%BB%E5%85%9A%E5%8F%82%E8%AE%AE%E5%91%98%20Jon%20Ossoff%20%E7%81%AB%E4%BA%86&src=typed_query&f=live",
-      "rank": 62
-    },
-    {
-      "title": "在国内，有什么信息差，普通人18-35岁这个年纪可以尝试做什",
-      "meta": "1 帖 · 1 人在说 · 16.0万曝光",
-      "median": "中位数 16.0万 曝光",
-      "views": "16.0万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 160461,
-        "median_views": 160461,
-        "total_likes": 127,
-        "max_rate": 0
-      },
-      "tags": [
-        "#growth",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118537669169103268",
-          "url": "https://x.com/mariregina55109/status/2118537669169103268",
-          "text": "在国内，有什么信息差，普通人18-35岁这个年纪可以尝试做什么来实现月入 1～2w的，最好是不需要垫资囤货，空手套白狼的，多劳多得的，大家有什么分享。",
-          "handle": "@mariregina55109",
-          "name": "Ning",
-          "views": "16.0万",
-          "raw_views": 160461
-        }
-      ],
-      "source_ids": [
-        "2118537669169103268"
-      ],
-      "source_indices": [
-        63
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%9C%A8%E5%9B%BD%E5%86%85%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BF%A1%E6%81%AF%E5%B7%AE%EF%BC%8C%E6%99%AE%E9%80%9A%E4%BA%BA18-35%E5%B2%81%E8%BF%99%E4%B8%AA%E5%B9%B4%E7%BA%AA%E5%8F%AF%E4%BB%A5%E5%B0%9D%E8%AF%95%E5%81%9A%E4%BB%80&src=typed_query&f=live",
-      "rank": 63
+      "rank": 58
     },
     {
       "title": "《汉谟拉比法典》第196条规定，如果一个自由民毁掉另一个自由",
@@ -6466,7 +6326,7 @@
         64
       ],
       "searchUrl": "https://x.com/search?q=%E3%80%8A%E6%B1%89%E8%B0%9F%E6%8B%89%E6%AF%94%E6%B3%95%E5%85%B8%E3%80%8B%E7%AC%AC196%E6%9D%A1%E8%A7%84%E5%AE%9A%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%80%E4%B8%AA%E8%87%AA%E7%94%B1%E6%B0%91%E6%AF%81%E6%8E%89%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%87%AA%E7%94%B1&src=typed_query&f=live",
-      "rank": 64
+      "rank": 59
     },
     {
       "title": "不包番茄籽的番茄发布热门内容",
@@ -6503,7 +6363,7 @@
         65
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%8D%E5%8C%85%E7%95%AA%E8%8C%84%E7%B1%BD%E7%9A%84%E7%95%AA%E8%8C%84%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 65
+      "rank": 60
     },
     {
       "title": "商家你绷得住吗",
@@ -6541,7 +6401,7 @@
         66
       ],
       "searchUrl": "https://x.com/search?q=%E5%95%86%E5%AE%B6%E4%BD%A0%E7%BB%B7%E5%BE%97%E4%BD%8F%E5%90%97&src=typed_query&f=live",
-      "rank": 66
+      "rank": 61
     },
     {
       "title": "拜登也回归社交媒体的时间线了 老哥公开被晒照的频率，最近回来",
@@ -6578,7 +6438,7 @@
         67
       ],
       "searchUrl": "https://x.com/search?q=%E6%8B%9C%E7%99%BB%E4%B9%9F%E5%9B%9E%E5%BD%92%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E7%9A%84%E6%97%B6%E9%97%B4%E7%BA%BF%E4%BA%86%20%E8%80%81%E5%93%A5%E5%85%AC%E5%BC%80%E8%A2%AB%E6%99%92%E7%85%A7%E7%9A%84%E9%A2%91%E7%8E%87%EF%BC%8C%E6%9C%80%E8%BF%91%E5%9B%9E%E6%9D%A5&src=typed_query&f=live",
-      "rank": 67
+      "rank": 62
     },
     {
       "title": "原来这世界上真有好工作",
@@ -6615,7 +6475,7 @@
         71
       ],
       "searchUrl": "https://x.com/search?q=%E5%8E%9F%E6%9D%A5%E8%BF%99%E4%B8%96%E7%95%8C%E4%B8%8A%E7%9C%9F%E6%9C%89%E5%A5%BD%E5%B7%A5%E4%BD%9C&src=typed_query&f=live",
-      "rank": 68
+      "rank": 63
     },
     {
       "title": "有人的能赚钱真的是有原因的",
@@ -6653,7 +6513,7 @@
         72
       ],
       "searchUrl": "https://x.com/search?q=%E6%9C%89%E4%BA%BA%E7%9A%84%E8%83%BD%E8%B5%9A%E9%92%B1%E7%9C%9F%E7%9A%84%E6%98%AF%E6%9C%89%E5%8E%9F%E5%9B%A0%E7%9A%84&src=typed_query&f=live",
-      "rank": 69
+      "rank": 64
     },
     {
       "title": "Dan Koe 拆解了普通人如何在 2027 年打造一个月入",
@@ -6691,7 +6551,7 @@
         74
       ],
       "searchUrl": "https://x.com/search?q=Dan%20Koe%20%E6%8B%86%E8%A7%A3%E4%BA%86%E6%99%AE%E9%80%9A%E4%BA%BA%E5%A6%82%E4%BD%95%E5%9C%A8%202027%20%E5%B9%B4%E6%89%93%E9%80%A0%E4%B8%80%E4%B8%AA%E6%9C%88%E5%85%A5&src=typed_query&f=live",
-      "rank": 70
+      "rank": 65
     },
     {
       "title": "太不够意思 女同事明白也不告诉他",
@@ -6728,7 +6588,7 @@
         75
       ],
       "searchUrl": "https://x.com/search?q=%E5%A4%AA%E4%B8%8D%E5%A4%9F%E6%84%8F%E6%80%9D%20%E5%A5%B3%E5%90%8C%E4%BA%8B%E6%98%8E%E7%99%BD%E4%B9%9F%E4%B8%8D%E5%91%8A%E8%AF%89%E4%BB%96&src=typed_query&f=live",
-      "rank": 71
+      "rank": 66
     },
     {
       "title": "允许经商的越南军队...",
@@ -6765,7 +6625,7 @@
         76
       ],
       "searchUrl": "https://x.com/search?q=%E5%85%81%E8%AE%B8%E7%BB%8F%E5%95%86%E7%9A%84%E8%B6%8A%E5%8D%97%E5%86%9B%E9%98%9F...&src=typed_query&f=live",
-      "rank": 72
+      "rank": 67
     },
     {
       "title": "SN发布热门内容",
@@ -6802,7 +6662,7 @@
         78
       ],
       "searchUrl": "https://x.com/search?q=SN%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 73
+      "rank": 68
     },
     {
       "title": "香港卓能集团主席、百亿富豪赵世曾是香港四大船王赵从衍之子",
@@ -6839,45 +6699,7 @@
         79
       ],
       "searchUrl": "https://x.com/search?q=%E9%A6%99%E6%B8%AF%E5%8D%93%E8%83%BD%E9%9B%86%E5%9B%A2%E4%B8%BB%E5%B8%AD%E3%80%81%E7%99%BE%E4%BA%BF%E5%AF%8C%E8%B1%AA%E8%B5%B5%E4%B8%96%E6%9B%BE%E6%98%AF%E9%A6%99%E6%B8%AF%E5%9B%9B%E5%A4%A7%E8%88%B9%E7%8E%8B%E8%B5%B5%E4%BB%8E%E8%A1%8D%E4%B9%8B%E5%AD%90&src=typed_query&f=live",
-      "rank": 74
-    },
-    {
-      "title": "前人疯狂白嫖退款，后人直接把路走绝",
-      "meta": "1 帖 · 1 人在说 · 12.8万曝光",
-      "median": "中位数 12.8万 曝光",
-      "views": "12.8万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 128076,
-        "median_views": 128076,
-        "total_likes": 264,
-        "max_rate": 0
-      },
-      "tags": [
-        "#ai_coding",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118640579651457265",
-          "url": "https://x.com/LanzhiAI/status/2118640579651457265",
-          "text": "前人疯狂白嫖退款，后人直接把路走绝。Claude 这波把门焊死，老实人全被误伤了！  最近 iOS 订阅 Claude 突然大面积暴雷，不管是养了几年的美区老 ",
-          "handle": "@LanzhiAI",
-          "name": "澜知 AI",
-          "views": "12.8万",
-          "raw_views": 128076
-        }
-      ],
-      "source_ids": [
-        "2118640579651457265"
-      ],
-      "source_indices": [
-        80
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%89%8D%E4%BA%BA%E7%96%AF%E7%8B%82%E7%99%BD%E5%AB%96%E9%80%80%E6%AC%BE%EF%BC%8C%E5%90%8E%E4%BA%BA%E7%9B%B4%E6%8E%A5%E6%8A%8A%E8%B7%AF%E8%B5%B0%E7%BB%9D&src=typed_query&f=live",
-      "rank": 75
+      "rank": 69
     },
     {
       "title": "之前一直没发现，原来欧阳娜娜这么有实力",
@@ -6914,7 +6736,44 @@
         81
       ],
       "searchUrl": "https://x.com/search?q=%E4%B9%8B%E5%89%8D%E4%B8%80%E7%9B%B4%E6%B2%A1%E5%8F%91%E7%8E%B0%EF%BC%8C%E5%8E%9F%E6%9D%A5%E6%AC%A7%E9%98%B3%E5%A8%9C%E5%A8%9C%E8%BF%99%E4%B9%88%E6%9C%89%E5%AE%9E%E5%8A%9B&src=typed_query&f=live",
-      "rank": 76
+      "rank": 70
+    },
+    {
+      "title": "Lumen第二次路演顺利结束 感谢各位朋友参与，未来继续同行",
+      "meta": "1 帖 · 1 人在说 · 12.7万曝光",
+      "median": "中位数 12.7万 曝光",
+      "views": "12.7万",
+      "stats": {
+        "posts": 1,
+        "people": 1,
+        "total_views": 127215,
+        "median_views": 127215,
+        "total_likes": 21,
+        "max_rate": 0
+      },
+      "tags": [
+        "#独立话题",
+        "#X热帖"
+      ],
+      "samples": [
+        {
+          "id": "2118526172325957969",
+          "url": "https://x.com/wuk_bitcoin/status/2118526172325957969",
+          "text": "Lumen第二次路演顺利结束 感谢各位朋友参与，未来继续同行",
+          "handle": "@wuk_bitcoin",
+          "name": "Donato",
+          "views": "12.7万",
+          "raw_views": 127215
+        }
+      ],
+      "source_ids": [
+        "2118526172325957969"
+      ],
+      "source_indices": [
+        82
+      ],
+      "searchUrl": "https://x.com/search?q=Lumen%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%B7%AF%E6%BC%94%E9%A1%BA%E5%88%A9%E7%BB%93%E6%9D%9F%20%E6%84%9F%E8%B0%A2%E5%90%84%E4%BD%8D%E6%9C%8B%E5%8F%8B%E5%8F%82%E4%B8%8E%EF%BC%8C%E6%9C%AA%E6%9D%A5%E7%BB%A7%E7%BB%AD%E5%90%8C%E8%A1%8C&src=typed_query&f=live",
+      "rank": 71
     },
     {
       "title": "这演唱会看的也太值了，什么档次",
@@ -6951,7 +6810,7 @@
         83
       ],
       "searchUrl": "https://x.com/search?q=%E8%BF%99%E6%BC%94%E5%94%B1%E4%BC%9A%E7%9C%8B%E7%9A%84%E4%B9%9F%E5%A4%AA%E5%80%BC%E4%BA%86%EF%BC%8C%E4%BB%80%E4%B9%88%E6%A1%A3%E6%AC%A1&src=typed_query&f=live",
-      "rank": 77
+      "rank": 72
     },
     {
       "title": "这眼神也太勾人了吧 求她的地址和链接啊 哪位大神告诉我一下",
@@ -6988,7 +6847,7 @@
         84
       ],
       "searchUrl": "https://x.com/search?q=%E8%BF%99%E7%9C%BC%E7%A5%9E%E4%B9%9F%E5%A4%AA%E5%8B%BE%E4%BA%BA%E4%BA%86%E5%90%A7%20%E6%B1%82%E5%A5%B9%E7%9A%84%E5%9C%B0%E5%9D%80%E5%92%8C%E9%93%BE%E6%8E%A5%E5%95%8A%20%E5%93%AA%E4%BD%8D%E5%A4%A7%E7%A5%9E%E5%91%8A%E8%AF%89%E6%88%91%E4%B8%80%E4%B8%8B&src=typed_query&f=live",
-      "rank": 78
+      "rank": 73
     },
     {
       "title": "一个敢卖，一个敢买",
@@ -7025,7 +6884,7 @@
         87
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%80%E4%B8%AA%E6%95%A2%E5%8D%96%EF%BC%8C%E4%B8%80%E4%B8%AA%E6%95%A2%E4%B9%B0&src=typed_query&f=live",
-      "rank": 79
+      "rank": 74
     },
     {
       "title": "一个大哥 只是因为没坐到高铁座位上 就被集美挂网上了 最逆天",
@@ -7062,7 +6921,7 @@
         88
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%93%A5%20%E5%8F%AA%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%B2%A1%E5%9D%90%E5%88%B0%E9%AB%98%E9%93%81%E5%BA%A7%E4%BD%8D%E4%B8%8A%20%E5%B0%B1%E8%A2%AB%E9%9B%86%E7%BE%8E%E6%8C%82%E7%BD%91%E4%B8%8A%E4%BA%86%20%E6%9C%80%E9%80%86%E5%A4%A9&src=typed_query&f=live",
-      "rank": 80
+      "rank": 75
     },
     {
       "title": "6月23号那天中午， 自己给自己写好了命运轨迹， 一语成谶",
@@ -7099,7 +6958,7 @@
         89
       ],
       "searchUrl": "https://x.com/search?q=6%E6%9C%8823%E5%8F%B7%E9%82%A3%E5%A4%A9%E4%B8%AD%E5%8D%88%EF%BC%8C%20%E8%87%AA%E5%B7%B1%E7%BB%99%E8%87%AA%E5%B7%B1%E5%86%99%E5%A5%BD%E4%BA%86%E5%91%BD%E8%BF%90%E8%BD%A8%E8%BF%B9%EF%BC%8C%20%E4%B8%80%E8%AF%AD%E6%88%90%E8%B0%B6&src=typed_query&f=live",
-      "rank": 81
+      "rank": 76
     },
     {
       "title": "Alice发布热门内容",
@@ -7136,7 +6995,7 @@
         90
       ],
       "searchUrl": "https://x.com/search?q=Alice%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 82
+      "rank": 77
     },
     {
       "title": "chỉ là ca hát khi buồn thôi",
@@ -7173,7 +7032,7 @@
         91
       ],
       "searchUrl": "https://x.com/search?q=ch%E1%BB%89%20l%C3%A0%20ca%20h%C3%A1t%20khi%20bu%E1%BB%93n%20th%C3%B4i&src=typed_query&f=live",
-      "rank": 83
+      "rank": 78
     },
     {
       "title": "袁腾飞这简直是“当代终极力工”的教科书级示范",
@@ -7210,45 +7069,7 @@
         92
       ],
       "searchUrl": "https://x.com/search?q=%E8%A2%81%E8%85%BE%E9%A3%9E%E8%BF%99%E7%AE%80%E7%9B%B4%E6%98%AF%E2%80%9C%E5%BD%93%E4%BB%A3%E7%BB%88%E6%9E%81%E5%8A%9B%E5%B7%A5%E2%80%9D%E7%9A%84%E6%95%99%E7%A7%91%E4%B9%A6%E7%BA%A7%E7%A4%BA%E8%8C%83&src=typed_query&f=live",
-      "rank": 84
-    },
-    {
-      "title": "省流：黄油群主的大肥鱼自己修复了群里的黄油，还把修复后的黄油",
-      "meta": "1 帖 · 1 人在说 · 11.6万曝光",
-      "median": "中位数 11.6万 曝光",
-      "views": "11.6万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 115644,
-        "median_views": 115644,
-        "total_likes": 801,
-        "max_rate": 0
-      },
-      "tags": [
-        "#ai_coding",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118662176290591137",
-          "url": "https://x.com/CyberKanjousen/status/2118662176290591137",
-          "text": "省流：黄油群主的大肥鱼自己修复了群里的黄油，还把修复后的黄油发群里。全过程一共烧了群主 15 亿 token🤯 https://t.co/huzNW4Y1yU",
-          "handle": "@CyberKanjousen",
-          "name": "サイバー環状線",
-          "views": "11.6万",
-          "raw_views": 115644
-        }
-      ],
-      "source_ids": [
-        "2118662176290591137"
-      ],
-      "source_indices": [
-        94
-      ],
-      "searchUrl": "https://x.com/search?q=%E7%9C%81%E6%B5%81%EF%BC%9A%E9%BB%84%E6%B2%B9%E7%BE%A4%E4%B8%BB%E7%9A%84%E5%A4%A7%E8%82%A5%E9%B1%BC%E8%87%AA%E5%B7%B1%E4%BF%AE%E5%A4%8D%E4%BA%86%E7%BE%A4%E9%87%8C%E7%9A%84%E9%BB%84%E6%B2%B9%EF%BC%8C%E8%BF%98%E6%8A%8A%E4%BF%AE%E5%A4%8D%E5%90%8E%E7%9A%84%E9%BB%84%E6%B2%B9&src=typed_query&f=live",
-      "rank": 85
+      "rank": 79
     },
     {
       "title": "？？？？？？？？？？？？",
@@ -7285,7 +7106,7 @@
         95
       ],
       "searchUrl": "https://x.com/search?q=%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F&src=typed_query&f=live",
-      "rank": 86
+      "rank": 80
     },
     {
       "title": "在纽约曼哈顿著名的亿万富豪街上，立着一栋高 425 米、长宽",
@@ -7322,7 +7143,7 @@
         96
       ],
       "searchUrl": "https://x.com/search?q=%E5%9C%A8%E7%BA%BD%E7%BA%A6%E6%9B%BC%E5%93%88%E9%A1%BF%E8%91%97%E5%90%8D%E7%9A%84%E4%BA%BF%E4%B8%87%E5%AF%8C%E8%B1%AA%E8%A1%97%E4%B8%8A%EF%BC%8C%E7%AB%8B%E7%9D%80%E4%B8%80%E6%A0%8B%E9%AB%98%20425%20%E7%B1%B3%E3%80%81%E9%95%BF%E5%AE%BD&src=typed_query&f=live",
-      "rank": 87
+      "rank": 81
     },
     {
       "title": "深夜提灯人发布热门内容",
@@ -7359,7 +7180,7 @@
         97
       ],
       "searchUrl": "https://x.com/search?q=%E6%B7%B1%E5%A4%9C%E6%8F%90%E7%81%AF%E4%BA%BA%E5%8F%91%E5%B8%83%E7%83%AD%E9%97%A8%E5%86%85%E5%AE%B9&src=typed_query&f=live",
-      "rank": 88
+      "rank": 82
     },
     {
       "title": "非洲岩蟒与花豹的生死搏斗😱",
@@ -7396,7 +7217,7 @@
         98
       ],
       "searchUrl": "https://x.com/search?q=%E9%9D%9E%E6%B4%B2%E5%B2%A9%E8%9F%92%E4%B8%8E%E8%8A%B1%E8%B1%B9%E7%9A%84%E7%94%9F%E6%AD%BB%E6%90%8F%E6%96%97%F0%9F%98%B1&src=typed_query&f=live",
-      "rank": 89
+      "rank": 83
     },
     {
       "title": "卓伟当年在直播里说过一段：陈晓是突然提的离婚，东西一收，人就",
@@ -7433,7 +7254,7 @@
         99
       ],
       "searchUrl": "https://x.com/search?q=%E5%8D%93%E4%BC%9F%E5%BD%93%E5%B9%B4%E5%9C%A8%E7%9B%B4%E6%92%AD%E9%87%8C%E8%AF%B4%E8%BF%87%E4%B8%80%E6%AE%B5%EF%BC%9A%E9%99%88%E6%99%93%E6%98%AF%E7%AA%81%E7%84%B6%E6%8F%90%E7%9A%84%E7%A6%BB%E5%A9%9A%EF%BC%8C%E4%B8%9C%E8%A5%BF%E4%B8%80%E6%94%B6%EF%BC%8C%E4%BA%BA%E5%B0%B1&src=typed_query&f=live",
-      "rank": 90
+      "rank": 84
     },
     {
       "title": "强子最火的一集",
@@ -7475,7 +7296,7 @@
         100
       ],
       "searchUrl": "https://x.com/search?q=%E5%BC%BA%E5%AD%90%E6%9C%80%E7%81%AB%E7%9A%84%E4%B8%80%E9%9B%86&src=typed_query&f=live",
-      "rank": 91
+      "rank": 85
     },
     {
       "title": "我哥年薪200万，嫂子却日日对外骂我哥月薪6000是穷鬼，她",
@@ -7512,45 +7333,7 @@
         102
       ],
       "searchUrl": "https://x.com/search?q=%E6%88%91%E5%93%A5%E5%B9%B4%E8%96%AA200%E4%B8%87%EF%BC%8C%E5%AB%82%E5%AD%90%E5%8D%B4%E6%97%A5%E6%97%A5%E5%AF%B9%E5%A4%96%E9%AA%82%E6%88%91%E5%93%A5%E6%9C%88%E8%96%AA6000%E6%98%AF%E7%A9%B7%E9%AC%BC%EF%BC%8C%E5%A5%B9&src=typed_query&f=live",
-      "rank": 92
-    },
-    {
-      "title": "老天爷，天塌了， tibo走人了， GPT以后没有重置， 活",
-      "meta": "1 帖 · 1 人在说 · 10.4万曝光",
-      "median": "中位数 10.4万 曝光",
-      "views": "10.4万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 103739,
-        "median_views": 103739,
-        "total_likes": 189,
-        "max_rate": 5592
-      },
-      "tags": [
-        "#ai_coding",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118526693866672529",
-          "url": "https://x.com/niumoney/status/2118526693866672529",
-          "text": "老天爷，天塌了，  tibo走人了，  GPT以后没有重置，  活不下去了啊！！！！",
-          "handle": "@niumoney",
-          "name": "牛宝富",
-          "views": "10.4万",
-          "raw_views": 103739
-        }
-      ],
-      "source_ids": [
-        "2118526693866672529"
-      ],
-      "source_indices": [
-        104
-      ],
-      "searchUrl": "https://x.com/search?q=%E8%80%81%E5%A4%A9%E7%88%B7%EF%BC%8C%E5%A4%A9%E5%A1%8C%E4%BA%86%EF%BC%8C%20tibo%E8%B5%B0%E4%BA%BA%E4%BA%86%EF%BC%8C%20GPT%E4%BB%A5%E5%90%8E%E6%B2%A1%E6%9C%89%E9%87%8D%E7%BD%AE%EF%BC%8C%20%E6%B4%BB&src=typed_query&f=live",
-      "rank": 93
+      "rank": 86
     },
     {
       "title": "再看依旧难绷🤣🤣🤣🤣🤣",
@@ -7587,7 +7370,7 @@
         105
       ],
       "searchUrl": "https://x.com/search?q=%E5%86%8D%E7%9C%8B%E4%BE%9D%E6%97%A7%E9%9A%BE%E7%BB%B7%F0%9F%A4%A3%F0%9F%A4%A3%F0%9F%A4%A3%F0%9F%A4%A3%F0%9F%A4%A3&src=typed_query&f=live",
-      "rank": 94
+      "rank": 87
     },
     {
       "title": "知名投资人，All in Podcast 的 Jason 抄",
@@ -7625,7 +7408,7 @@
         106
       ],
       "searchUrl": "https://x.com/search?q=%E7%9F%A5%E5%90%8D%E6%8A%95%E8%B5%84%E4%BA%BA%EF%BC%8CAll%20in%20Podcast%20%E7%9A%84%20Jason%20%E6%8A%84&src=typed_query&f=live",
-      "rank": 95
+      "rank": 88
     },
     {
       "title": "在节目组眼里，薛之谦简直就是个魔童",
@@ -7662,7 +7445,7 @@
         107
       ],
       "searchUrl": "https://x.com/search?q=%E5%9C%A8%E8%8A%82%E7%9B%AE%E7%BB%84%E7%9C%BC%E9%87%8C%EF%BC%8C%E8%96%9B%E4%B9%8B%E8%B0%A6%E7%AE%80%E7%9B%B4%E5%B0%B1%E6%98%AF%E4%B8%AA%E9%AD%94%E7%AB%A5&src=typed_query&f=live",
-      "rank": 96
+      "rank": 89
     },
     {
       "title": "如果你能找到一个薄肌的坏处 那你直接来找我领1万块钱",
@@ -7699,7 +7482,7 @@
         108
       ],
       "searchUrl": "https://x.com/search?q=%E5%A6%82%E6%9E%9C%E4%BD%A0%E8%83%BD%E6%89%BE%E5%88%B0%E4%B8%80%E4%B8%AA%E8%96%84%E8%82%8C%E7%9A%84%E5%9D%8F%E5%A4%84%20%E9%82%A3%E4%BD%A0%E7%9B%B4%E6%8E%A5%E6%9D%A5%E6%89%BE%E6%88%91%E9%A2%861%E4%B8%87%E5%9D%97%E9%92%B1&src=typed_query&f=live",
-      "rank": 97
+      "rank": 90
     },
     {
       "title": "这是当年轰动全网的北京奇葩买房案，一对小夫妻当年只花3万块钱",
@@ -7736,7 +7519,7 @@
         109
       ],
       "searchUrl": "https://x.com/search?q=%E8%BF%99%E6%98%AF%E5%BD%93%E5%B9%B4%E8%BD%B0%E5%8A%A8%E5%85%A8%E7%BD%91%E7%9A%84%E5%8C%97%E4%BA%AC%E5%A5%87%E8%91%A9%E4%B9%B0%E6%88%BF%E6%A1%88%EF%BC%8C%E4%B8%80%E5%AF%B9%E5%B0%8F%E5%A4%AB%E5%A6%BB%E5%BD%93%E5%B9%B4%E5%8F%AA%E8%8A%B13%E4%B8%87%E5%9D%97%E9%92%B1&src=typed_query&f=live",
-      "rank": 98
+      "rank": 91
     },
     {
       "title": "演唱会现场，热情似火",
@@ -7773,7 +7556,45 @@
         110
       ],
       "searchUrl": "https://x.com/search?q=%E6%BC%94%E5%94%B1%E4%BC%9A%E7%8E%B0%E5%9C%BA%EF%BC%8C%E7%83%AD%E6%83%85%E4%BC%BC%E7%81%AB&src=typed_query&f=live",
-      "rank": 99
+      "rank": 92
+    },
+    {
+      "title": "谁能想到，现在 Anthropic 的 CEO Dario，",
+      "meta": "1 帖 · 1 人在说 · 9.6万曝光",
+      "median": "中位数 9.6万 曝光",
+      "views": "9.6万",
+      "stats": {
+        "posts": 1,
+        "people": 1,
+        "total_views": 95811,
+        "median_views": 95811,
+        "total_likes": 302,
+        "max_rate": 13947
+      },
+      "tags": [
+        "#ai_coding",
+        "#独立话题",
+        "#X热帖"
+      ],
+      "samples": [
+        {
+          "id": "2118705039988674675",
+          "url": "https://x.com/Vincent_AINotes/status/2118705039988674675",
+          "text": "谁能想到，现在 Anthropic 的 CEO Dario，当年在百度也是个通宵干活的卷王 😂  2014 年，他加入百度在硅谷的 AI 实验室，跟着吴恩达搞研",
+          "handle": "@Vincent_AINotes",
+          "name": "Vincent",
+          "views": "9.6万",
+          "raw_views": 95811
+        }
+      ],
+      "source_ids": [
+        "2118705039988674675"
+      ],
+      "source_indices": [
+        112
+      ],
+      "searchUrl": "https://x.com/search?q=%E8%B0%81%E8%83%BD%E6%83%B3%E5%88%B0%EF%BC%8C%E7%8E%B0%E5%9C%A8%20Anthropic%20%E7%9A%84%20CEO%20Dario%EF%BC%8C&src=typed_query&f=live",
+      "rank": 93
     },
     {
       "title": "中国哪个软件最像暗网",
@@ -7810,7 +7631,7 @@
         113
       ],
       "searchUrl": "https://x.com/search?q=%E4%B8%AD%E5%9B%BD%E5%93%AA%E4%B8%AA%E8%BD%AF%E4%BB%B6%E6%9C%80%E5%83%8F%E6%9A%97%E7%BD%91&src=typed_query&f=live",
-      "rank": 100
+      "rank": 94
     },
     {
       "title": "韩国一对公务员夫妻，2022年时把家里的存款几乎全拿出来炒美",
@@ -7848,7 +7669,7 @@
         114
       ],
       "searchUrl": "https://x.com/search?q=%E9%9F%A9%E5%9B%BD%E4%B8%80%E5%AF%B9%E5%85%AC%E5%8A%A1%E5%91%98%E5%A4%AB%E5%A6%BB%EF%BC%8C2022%E5%B9%B4%E6%97%B6%E6%8A%8A%E5%AE%B6%E9%87%8C%E7%9A%84%E5%AD%98%E6%AC%BE%E5%87%A0%E4%B9%8E%E5%85%A8%E6%8B%BF%E5%87%BA%E6%9D%A5%E7%82%92%E7%BE%8E&src=typed_query&f=live",
-      "rank": 101
+      "rank": 95
     },
     {
       "title": "清华大学的课堂让人茅塞顿开",
@@ -7885,7 +7706,7 @@
         115
       ],
       "searchUrl": "https://x.com/search?q=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E7%9A%84%E8%AF%BE%E5%A0%82%E8%AE%A9%E4%BA%BA%E8%8C%85%E5%A1%9E%E9%A1%BF%E5%BC%80&src=typed_query&f=live",
-      "rank": 102
+      "rank": 96
     },
     {
       "title": "难以想象，在 2026 年的今天，艾灸这种巫术还能在中国大行",
@@ -7922,7 +7743,7 @@
         116
       ],
       "searchUrl": "https://x.com/search?q=%E9%9A%BE%E4%BB%A5%E6%83%B3%E8%B1%A1%EF%BC%8C%E5%9C%A8%202026%20%E5%B9%B4%E7%9A%84%E4%BB%8A%E5%A4%A9%EF%BC%8C%E8%89%BE%E7%81%B8%E8%BF%99%E7%A7%8D%E5%B7%AB%E6%9C%AF%E8%BF%98%E8%83%BD%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%A4%A7%E8%A1%8C&src=typed_query&f=live",
-      "rank": 103
+      "rank": 97
     },
     {
       "title": "美女看病，太搞笑了",
@@ -7959,7 +7780,7 @@
         117
       ],
       "searchUrl": "https://x.com/search?q=%E7%BE%8E%E5%A5%B3%E7%9C%8B%E7%97%85%EF%BC%8C%E5%A4%AA%E6%90%9E%E7%AC%91%E4%BA%86&src=typed_query&f=live",
-      "rank": 104
+      "rank": 98
     },
     {
       "title": "最近这个戴眼镜的姑娘为啥突然爆火",
@@ -7996,7 +7817,7 @@
         118
       ],
       "searchUrl": "https://x.com/search?q=%E6%9C%80%E8%BF%91%E8%BF%99%E4%B8%AA%E6%88%B4%E7%9C%BC%E9%95%9C%E7%9A%84%E5%A7%91%E5%A8%98%E4%B8%BA%E5%95%A5%E7%AA%81%E7%84%B6%E7%88%86%E7%81%AB&src=typed_query&f=live",
-      "rank": 105
+      "rank": 99
     },
     {
       "title": "半年没推过我粉丝群了，有交流需求的可以进我粉丝群，门槛就是注",
@@ -8034,7 +7855,7 @@
         120
       ],
       "searchUrl": "https://x.com/search?q=%E5%8D%8A%E5%B9%B4%E6%B2%A1%E6%8E%A8%E8%BF%87%E6%88%91%E7%B2%89%E4%B8%9D%E7%BE%A4%E4%BA%86%EF%BC%8C%E6%9C%89%E4%BA%A4%E6%B5%81%E9%9C%80%E6%B1%82%E7%9A%84%E5%8F%AF%E4%BB%A5%E8%BF%9B%E6%88%91%E7%B2%89%E4%B8%9D%E7%BE%A4%EF%BC%8C%E9%97%A8%E6%A7%9B%E5%B0%B1%E6%98%AF%E6%B3%A8&src=typed_query&f=live",
-      "rank": 106
+      "rank": 100
     },
     {
       "title": "字节跳动老总张一鸣能拿到大结果不是偶然的",
@@ -8071,7 +7892,7 @@
         121
       ],
       "searchUrl": "https://x.com/search?q=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E8%80%81%E6%80%BB%E5%BC%A0%E4%B8%80%E9%B8%A3%E8%83%BD%E6%8B%BF%E5%88%B0%E5%A4%A7%E7%BB%93%E6%9E%9C%E4%B8%8D%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84&src=typed_query&f=live",
-      "rank": 107
+      "rank": 101
     },
     {
       "title": "笑死🤣🤣🤣 沒錢就別充大頭吧",
@@ -8108,7 +7929,7 @@
         122
       ],
       "searchUrl": "https://x.com/search?q=%E7%AC%91%E6%AD%BB%F0%9F%A4%A3%F0%9F%A4%A3%F0%9F%A4%A3%20%E6%B2%92%E9%8C%A2%E5%B0%B1%E5%88%A5%E5%85%85%E5%A4%A7%E9%A0%AD%E5%90%A7&src=typed_query&f=live",
-      "rank": 108
+      "rank": 102
     },
     {
       "title": "你是怎么听懂别人的暗示的",
@@ -8145,45 +7966,7 @@
         123
       ],
       "searchUrl": "https://x.com/search?q=%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%90%AC%E6%87%82%E5%88%AB%E4%BA%BA%E7%9A%84%E6%9A%97%E7%A4%BA%E7%9A%84&src=typed_query&f=live",
-      "rank": 109
-    },
-    {
-      "title": "一个大胆猜想：11月反弹 到12月见顶 开始真正的狂暴下跌",
-      "meta": "1 帖 · 1 人在说 · 8.8万曝光",
-      "median": "中位数 8.8万 曝光",
-      "views": "8.8万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 87815,
-        "median_views": 87815,
-        "total_likes": 299,
-        "max_rate": 3048
-      },
-      "tags": [
-        "#finance",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118580072944902301",
-          "url": "https://x.com/cryptoapprenti1/status/2118580072944902301",
-          "text": "一个大胆猜想：11月反弹 到12月见顶 开始真正的狂暴下跌！ https://t.co/UBussMmluT",
-          "handle": "@cryptoapprenti1",
-          "name": "Dr.Hash“Wesley”",
-          "views": "8.8万",
-          "raw_views": 87815
-        }
-      ],
-      "source_ids": [
-        "2118580072944902301"
-      ],
-      "source_indices": [
-        126
-      ],
-      "searchUrl": "https://x.com/search?q=%E4%B8%80%E4%B8%AA%E5%A4%A7%E8%83%86%E7%8C%9C%E6%83%B3%EF%BC%9A11%E6%9C%88%E5%8F%8D%E5%BC%B9%20%E5%88%B012%E6%9C%88%E8%A7%81%E9%A1%B6%20%E5%BC%80%E5%A7%8B%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%8B%82%E6%9A%B4%E4%B8%8B%E8%B7%8C&src=typed_query&f=live",
-      "rank": 110
+      "rank": 103
     },
     {
       "title": "我发现推上不少人，尤其是在美国硅谷、华尔街工作的华人，多少有",
@@ -8221,7 +8004,7 @@
         127
       ],
       "searchUrl": "https://x.com/search?q=%E6%88%91%E5%8F%91%E7%8E%B0%E6%8E%A8%E4%B8%8A%E4%B8%8D%E5%B0%91%E4%BA%BA%EF%BC%8C%E5%B0%A4%E5%85%B6%E6%98%AF%E5%9C%A8%E7%BE%8E%E5%9B%BD%E7%A1%85%E8%B0%B7%E3%80%81%E5%8D%8E%E5%B0%94%E8%A1%97%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%8D%8E%E4%BA%BA%EF%BC%8C%E5%A4%9A%E5%B0%91%E6%9C%89&src=typed_query&f=live",
-      "rank": 111
+      "rank": 104
     },
     {
       "title": "兄弟们这个是谁啊",
@@ -8258,7 +8041,7 @@
         128
       ],
       "searchUrl": "https://x.com/search?q=%E5%85%84%E5%BC%9F%E4%BB%AC%E8%BF%99%E4%B8%AA%E6%98%AF%E8%B0%81%E5%95%8A&src=typed_query&f=live",
-      "rank": 112
+      "rank": 105
     },
     {
       "title": "给我脑子整宕机了 我还特意查了查，什么是非二元性别 这叠加的",
@@ -8295,7 +8078,7 @@
         129
       ],
       "searchUrl": "https://x.com/search?q=%E7%BB%99%E6%88%91%E8%84%91%E5%AD%90%E6%95%B4%E5%AE%95%E6%9C%BA%E4%BA%86%20%E6%88%91%E8%BF%98%E7%89%B9%E6%84%8F%E6%9F%A5%E4%BA%86%E6%9F%A5%EF%BC%8C%E4%BB%80%E4%B9%88%E6%98%AF%E9%9D%9E%E4%BA%8C%E5%85%83%E6%80%A7%E5%88%AB%20%E8%BF%99%E5%8F%A0%E5%8A%A0%E7%9A%84&src=typed_query&f=live",
-      "rank": 113
+      "rank": 106
     },
     {
       "title": "哈哈哈哈哈哈",
@@ -8332,7 +8115,7 @@
         130
       ],
       "searchUrl": "https://x.com/search?q=%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88&src=typed_query&f=live",
-      "rank": 114
+      "rank": 107
     },
     {
       "title": "巴菲特在2020年伯克希尔股东大会上那段关于“股价暴跌 50",
@@ -8370,7 +8153,7 @@
         131
       ],
       "searchUrl": "https://x.com/search?q=%E5%B7%B4%E8%8F%B2%E7%89%B9%E5%9C%A82020%E5%B9%B4%E4%BC%AF%E5%85%8B%E5%B8%8C%E5%B0%94%E8%82%A1%E4%B8%9C%E5%A4%A7%E4%BC%9A%E4%B8%8A%E9%82%A3%E6%AE%B5%E5%85%B3%E4%BA%8E%E2%80%9C%E8%82%A1%E4%BB%B7%E6%9A%B4%E8%B7%8C%2050&src=typed_query&f=live",
-      "rank": 115
+      "rank": 108
     },
     {
       "title": "都说了大几万的教程， 结果闲鱼这帮人卖6.66 太不识货了😅",
@@ -8408,7 +8191,7 @@
         132
       ],
       "searchUrl": "https://x.com/search?q=%E9%83%BD%E8%AF%B4%E4%BA%86%E5%A4%A7%E5%87%A0%E4%B8%87%E7%9A%84%E6%95%99%E7%A8%8B%EF%BC%8C%20%E7%BB%93%E6%9E%9C%E9%97%B2%E9%B1%BC%E8%BF%99%E5%B8%AE%E4%BA%BA%E5%8D%966.66%20%E5%A4%AA%E4%B8%8D%E8%AF%86%E8%B4%A7%E4%BA%86%F0%9F%98%85&src=typed_query&f=live",
-      "rank": 116
+      "rank": 109
     },
     {
       "title": "李一恩清仓长鑫科技 他目前持仓 一半中概互联网 ETF，四分",
@@ -8446,7 +8229,7 @@
         135
       ],
       "searchUrl": "https://x.com/search?q=%E6%9D%8E%E4%B8%80%E6%81%A9%E6%B8%85%E4%BB%93%E9%95%BF%E9%91%AB%E7%A7%91%E6%8A%80%20%E4%BB%96%E7%9B%AE%E5%89%8D%E6%8C%81%E4%BB%93%20%E4%B8%80%E5%8D%8A%E4%B8%AD%E6%A6%82%E4%BA%92%E8%81%94%E7%BD%91%20ETF%EF%BC%8C%E5%9B%9B%E5%88%86&src=typed_query&f=live",
-      "rank": 117
+      "rank": 110
     },
     {
       "title": "Hey @grok 关于张继科的传言这是真的吗",
@@ -8483,82 +8266,7 @@
         138
       ],
       "searchUrl": "https://x.com/search?q=Hey%20%40grok%20%E5%85%B3%E4%BA%8E%E5%BC%A0%E7%BB%A7%E7%A7%91%E7%9A%84%E4%BC%A0%E8%A8%80%E8%BF%99%E6%98%AF%E7%9C%9F%E7%9A%84%E5%90%97&src=typed_query&f=live",
-      "rank": 118
-    },
-    {
-      "title": "亲历币安同款招聘攻击，我识破骗局反骗黑客 1000U，最后却",
-      "meta": "1 帖 · 1 人在说 · 8.2万曝光",
-      "median": "中位数 8.2万 曝光",
-      "views": "8.2万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 82109,
-        "median_views": 82109,
-        "total_likes": 255,
-        "max_rate": 0
-      },
-      "tags": [
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118529826902696119",
-          "url": "https://x.com/brucexu_eth/status/2118529826902696119",
-          "text": "亲历币安同款招聘攻击，我识破骗局反骗黑客 1000U，最后却发现自己中了木马",
-          "handle": "@brucexu_eth",
-          "name": "brucexu.eth",
-          "views": "8.2万",
-          "raw_views": 82109
-        }
-      ],
-      "source_ids": [
-        "2118529826902696119"
-      ],
-      "source_indices": [
-        139
-      ],
-      "searchUrl": "https://x.com/search?q=%E4%BA%B2%E5%8E%86%E5%B8%81%E5%AE%89%E5%90%8C%E6%AC%BE%E6%8B%9B%E8%81%98%E6%94%BB%E5%87%BB%EF%BC%8C%E6%88%91%E8%AF%86%E7%A0%B4%E9%AA%97%E5%B1%80%E5%8F%8D%E9%AA%97%E9%BB%91%E5%AE%A2%201000U%EF%BC%8C%E6%9C%80%E5%90%8E%E5%8D%B4&src=typed_query&f=live",
-      "rank": 119
-    },
-    {
-      "title": "抄底的部分先止盈了，今晚非农发布前应该还有机会",
-      "meta": "1 帖 · 1 人在说 · 8.2万曝光",
-      "median": "中位数 8.2万 曝光",
-      "views": "8.2万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 81959,
-        "median_views": 81959,
-        "total_likes": 398,
-        "max_rate": 819
-      },
-      "tags": [
-        "#finance",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118657536610140496",
-          "url": "https://x.com/iiiinvest/status/2118657536610140496",
-          "text": "抄底的部分先止盈了，今晚非农发布前应该还有机会。  PS. 傻仙和傻勃，永远不知道自己钱到哪去了。 https://t.co/qFPaRWKpHi",
-          "handle": "@iiiinvest",
-          "name": "电鱼哥专注SpaceX",
-          "views": "8.2万",
-          "raw_views": 81959
-        }
-      ],
-      "source_ids": [
-        "2118657536610140496"
-      ],
-      "source_indices": [
-        140
-      ],
-      "searchUrl": "https://x.com/search?q=%E6%8A%84%E5%BA%95%E7%9A%84%E9%83%A8%E5%88%86%E5%85%88%E6%AD%A2%E7%9B%88%E4%BA%86%EF%BC%8C%E4%BB%8A%E6%99%9A%E9%9D%9E%E5%86%9C%E5%8F%91%E5%B8%83%E5%89%8D%E5%BA%94%E8%AF%A5%E8%BF%98%E6%9C%89%E6%9C%BA%E4%BC%9A&src=typed_query&f=live",
-      "rank": 120
+      "rank": 111
     },
     {
       "title": "被骂丢尽体操脸面的吴柳芳，到底经历了什么",
@@ -8595,7 +8303,7 @@
         141
       ],
       "searchUrl": "https://x.com/search?q=%E8%A2%AB%E9%AA%82%E4%B8%A2%E5%B0%BD%E4%BD%93%E6%93%8D%E8%84%B8%E9%9D%A2%E7%9A%84%E5%90%B4%E6%9F%B3%E8%8A%B3%EF%BC%8C%E5%88%B0%E5%BA%95%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88&src=typed_query&f=live",
-      "rank": 121
+      "rank": 112
     },
     {
       "title": "这是啥呀… 大只是一个人的名字吗",
@@ -8632,7 +8340,7 @@
         142
       ],
       "searchUrl": "https://x.com/search?q=%E8%BF%99%E6%98%AF%E5%95%A5%E5%91%80%E2%80%A6%20%E5%A4%A7%E5%8F%AA%E6%98%AF%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E5%90%8D%E5%AD%97%E5%90%97&src=typed_query&f=live",
-      "rank": 122
+      "rank": 113
     },
     {
       "title": "对内网很绝望的时刻包括看到有人呼吁不要把螃蟹活活蒸死它们会很",
@@ -8669,45 +8377,7 @@
         143
       ],
       "searchUrl": "https://x.com/search?q=%E5%AF%B9%E5%86%85%E7%BD%91%E5%BE%88%E7%BB%9D%E6%9C%9B%E7%9A%84%E6%97%B6%E5%88%BB%E5%8C%85%E6%8B%AC%E7%9C%8B%E5%88%B0%E6%9C%89%E4%BA%BA%E5%91%BC%E5%90%81%E4%B8%8D%E8%A6%81%E6%8A%8A%E8%9E%83%E8%9F%B9%E6%B4%BB%E6%B4%BB%E8%92%B8%E6%AD%BB%E5%AE%83%E4%BB%AC%E4%BC%9A%E5%BE%88&src=typed_query&f=live",
-      "rank": 123
-    },
-    {
-      "title": "兄弟们 在国内有没有什么副业可以在家干 只要月入5w以上就可",
-      "meta": "1 帖 · 1 人在说 · 8.0万曝光",
-      "median": "中位数 8.0万 曝光",
-      "views": "8.0万",
-      "stats": {
-        "posts": 1,
-        "people": 1,
-        "total_views": 80231,
-        "median_views": 80231,
-        "total_likes": 22,
-        "max_rate": 0
-      },
-      "tags": [
-        "#growth",
-        "#独立话题",
-        "#X热帖"
-      ],
-      "samples": [
-        {
-          "id": "2118567874885468202",
-          "url": "https://x.com/wujizhuzhu/status/2118567874885468202",
-          "text": "兄弟们  在国内有没有什么副业可以在家干  只要月入5w以上就可以  失业快两年了，顶不住了🥹🥹🥹",
-          "handle": "@wujizhuzhu",
-          "name": "朱无忌无忌",
-          "views": "8.0万",
-          "raw_views": 80231
-        }
-      ],
-      "source_ids": [
-        "2118567874885468202"
-      ],
-      "source_indices": [
-        144
-      ],
-      "searchUrl": "https://x.com/search?q=%E5%85%84%E5%BC%9F%E4%BB%AC%20%E5%9C%A8%E5%9B%BD%E5%86%85%E6%9C%89%E6%B2%A1%E6%9C%89%E4%BB%80%E4%B9%88%E5%89%AF%E4%B8%9A%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%AE%B6%E5%B9%B2%20%E5%8F%AA%E8%A6%81%E6%9C%88%E5%85%A55w%E4%BB%A5%E4%B8%8A%E5%B0%B1%E5%8F%AF&src=typed_query&f=live",
-      "rank": 124
+      "rank": 114
     },
     {
       "title": "张朝阳：我们做不起大模型 11月6日消息，在2026世界互联",
@@ -8745,7 +8415,7 @@
         146
       ],
       "searchUrl": "https://x.com/search?q=%E5%BC%A0%E6%9C%9D%E9%98%B3%EF%BC%9A%E6%88%91%E4%BB%AC%E5%81%9A%E4%B8%8D%E8%B5%B7%E5%A4%A7%E6%A8%A1%E5%9E%8B%2011%E6%9C%886%E6%97%A5%E6%B6%88%E6%81%AF%EF%BC%8C%E5%9C%A82026%E4%B8%96%E7%95%8C%E4%BA%92%E8%81%94&src=typed_query&f=live",
-      "rank": 125
+      "rank": 115
     },
     {
       "title": "嗨@grok 美国下一届总统最大概率是谁",
@@ -8782,11 +8452,11 @@
         150
       ],
       "searchUrl": "https://x.com/search?q=%E5%97%A8%40grok%20%E7%BE%8E%E5%9B%BD%E4%B8%8B%E4%B8%80%E5%B1%8A%E6%80%BB%E7%BB%9F%E6%9C%80%E5%A4%A7%E6%A6%82%E7%8E%87%E6%98%AF%E8%B0%81&src=typed_query&f=live",
-      "rank": 126
+      "rank": 116
     }
   ],
   "topic_meta": {
-    "generated_at": "2026-11-07T01:15:30.441Z",
+    "generated_at": "2026-11-07T01:31:16.715Z",
     "model": "stepfun-ai/step-5-preview",
     "method": "AI 进行多帖事件语义聚类；本地程序校验并将未可靠合并的帖子保留为独立话题，同时恢复原始字段及计算统计。",
     "source": {
@@ -8795,7 +8465,7 @@
       "unique_text_posts": 150
     },
     "unmatched": {
-      "count": 114,
+      "count": 102,
       "source_ids": [
         "2118569068676497735",
         "2118564453906026579",
@@ -8822,32 +8492,25 @@
         "2118624427789242402",
         "2118686591350972810",
         "2118510119323672963",
-        "2118606080729387052",
-        "2118679727892230465",
         "2118612680923840887",
         "2118616575146430950",
         "2118542921834397864",
         "2118535591746785432",
         "2118601554685231578",
         "2118569067715953031",
-        "2118579832682606613",
         "2118610837451714604",
         "2118561512520564929",
         "2118544651380760781",
         "2118583937438220308",
-        "2118511944747606401",
         "2118524518951973290",
         "2118601331304960202",
         "2118571327041028431",
-        "2118660472341958959",
         "2118589378696196333",
         "2118568558900744470",
         "2118613379275161877",
         "2118539274220093743",
         "2118554906349248968",
         "2118607425661981106",
-        "2118629269043831184",
-        "2118537669169103268",
         "2118629712654192814",
         "2118545530330788028",
         "2118538872632012896",
@@ -8859,8 +8522,8 @@
         "2118604444959195266",
         "2118572023245062363",
         "2118556479535845671",
-        "2118640579651457265",
         "2118619763232628775",
+        "2118526172325957969",
         "2118698024411275382",
         "2118514691911876803",
         "2118641856670298590",
@@ -8869,7 +8532,6 @@
         "2118579642659704866",
         "2118632854972416158",
         "2118542736538362052",
-        "2118662176290591137",
         "2118588934397833550",
         "2118676017967509965",
         "2118623420489638262",
@@ -8877,13 +8539,13 @@
         "2118561348070375714",
         "2118675766212759552",
         "2118513202577408142",
-        "2118526693866672529",
         "2118648837933760742",
         "2118533010605933005",
         "2118538004528791778",
         "2118669473943069175",
         "2118590256819916894",
         "2118680803555307725",
+        "2118705039988674675",
         "2118601557029847228",
         "2118600614250754050",
         "2118628823868867064",
@@ -8894,7 +8556,6 @@
         "2118510938550919444",
         "2118566686299390319",
         "2118543590691664289",
-        "2118580072944902301",
         "2118574304774504666",
         "2118645530943434992",
         "2118564731288260738",
@@ -8903,12 +8564,9 @@
         "2118613601284247833",
         "2118560559495086111",
         "2118717443590004800",
-        "2118529826902696119",
-        "2118657536610140496",
         "2118607390098718983",
         "2118569312818733473",
         "2118683567177753009",
-        "2118567874885468202",
         "2118645070773801327",
         "2118706737645817891"
       ]
